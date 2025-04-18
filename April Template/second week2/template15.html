@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueRegular.359411b6a92a66bec574392.700a15b7729455e0e999b3ed4727605.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "BebasNeue";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background: black;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .tp-hero-left {
+        width: 34%;
+        background-color: rgb(250, 195, 15);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .tp-hero-title {
+        writing-mode: vertical-lr;
+        font-size:400px;
+        transform: translateX(-40px);
+        opacity: .8;
+    }
+    .tp-hero-logo {
+        width: 200px;
+        margin-top: 84px;
+        margin-bottom: 120px;
+    }
+    .tp-hero-right{ 
+        flex: 1;
+        padding-right: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        max-width: 512px;
+    }
+    .tp-hero-sub {
+        font-size: 160px;
+        font-weight: 700;
+        color: rgb(250, 195, 15);
+        line-height: .8em;
+        margin-bottom: 117px;
+        text-align: end;
+        letter-spacing: -0.05em;
+    }
+    .tp-hero-desc {
+        font-size: 38px;
+        opacity: .8;
+        line-height: 1.2em;
+        text-align: end;
+    }
+    .tp-hero-img {
+        width: 700px;
+        position: absolute;
+        bottom: -20px;
+        left: 36px;
+        z-index: 10
+    }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-left">
+                <h1 class="tp-hero-title">whiskey</h1>
+            </div>
+            <div class="tp-hero-right">
+                <div class="tp-hero-logo">
+                    <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+                </div>
+                <div class="tp-hero-sub">Trust In Whiskey</div>
+                <div class="tp-hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</div>
+            </div>
+            <div class="tp-hero-img">
+                <img src="./template15-img.png" alt="" class="img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

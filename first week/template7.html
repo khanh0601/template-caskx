@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('https://cdnwf.bear.plus/fonts/LeagueSpartan.woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    src: url('/Inter-Regular.woff2');
+}
+body{
+margin: 0;
+}
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('./template-img7.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'LeagueSpartan';
+}
+.tp-hero-title{
+    font-size: 80px;
+    color: rgb(225, 195, 64);
+    margin-top: 125px;
+    margin-left: 108px;
+    max-width: 345px;
+}
+.tp-hero-content{
+    margin-top: auto;
+    margin-bottom: 100px;
+    margin: auto 100px 100px auto;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    max-width: 272px;
+}
+.tp-hero-sub{
+    font-size: 39px;
+    line-height: 1.4em;
+    color: white;
+    margin-bottom: 33px;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Inter';
+    text-align: end;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    border-radius: 999px;
+    background-color: rgb(225, 195, 64);
+    margin-bottom: 33px;
+    text-transform: uppercase;
+}
+.tp-hero-order{
+    font-size: 33px;
+    color: rgb(225, 195, 64);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <h1 class="tp-hero-title">Kyobi Home Brews</h1>
+            <div class="tp-hero-content">
+                <p class="tp-hero-sub">For enthusiasts of all kinds</p>
+                <div class="line"></div>
+                <p class="tp-hero-order">order now</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

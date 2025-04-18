@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Forum";
+      src: url("https://cdnwf.bear.plus/fonts/Forum.woff2");
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas Cyrillic";
+      src: url("https://cdnwf.bear.plus/fonts/Bebas_Neue_Cyrillic.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("./template6.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Forum";
+      display: flex;
+      justify-content: center;
+      font-family: "Bebas";
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .img {
+      width: 100%;
+    }
+    .tp-hero-title {
+        color: white;
+        font-size: 136px;
+        line-height: .8em;
+        text-transform: uppercase;
+        font-family: "Bebas Cyrillic";
+        letter-spacing: 9px;
+        margin-top: 122px;
+    }
+    .tp-hero-sub {
+      font-size: 65px;
+      line-height: 1em;
+      color: rgb(234, 191, 48);
+      font-weight: 400;
+      letter-spacing: 4px;
+      margin-bottom: 20px
+    }
+    .tp-hero-desc {
+      font-size: 36px;
+      line-height: 1.2sem;
+      color: white;
+      font-weight: 400;
+      letter-spacing: 2px;
+      ;
+    }
+    .tp-hero-inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 50px 80px;
+        column-gap: 90px;
+
+    }
+    .tp-hero-img {
+        width: 500px;
+        flex: none;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        aspect-ratio: 520 / 1064;
+        position: relative;
+        overflow: hidden;
+    }
+    .tp-hero-img-bg {
+        position: relative;
+        z-index: 10;
+    }
+    .tp-hero-img-main {
+        position: absolute;
+        inset: 43px 16px;
+        z-index: 8;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .tp-hero-logo {
+        width: 100%;
+        max-width: 360px;
+        margin-bottom: 20px;
+        margin-top: auto;
+    }
+    .tp-hero-title-wrap {
+        flex: auto;
+        width: 100%;
+        text-align: right;
+        display: flex;
+        justify-content: end;
+        align-items: end;
+        flex-direction: column;
+        height: 100%;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-inner">
+            <div class="tp-hero-img">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/1979_phone-bg.png" alt="" class="img tp-hero-img-bg">
+                <div class="tp-hero-img-main">
+                    <img src="./phone-inner.jpg" alt="" class=" img">
+                </div>
+            </div>
+            <div class="tp-hero-title-wrap">
+                <div class="tp-hero-title">Heading</div>
+                <div class="tp-hero-sub">Subheading</div>
+                <div class="tp-hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</div>
+                <div class="tp-hero-logo"><img src="logo_cask.webp" alt="" class="img"></div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'Barlow';
+        src: url('https://cdnwf.bear.plus/fonts/Barlow-Bold.woff2');
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: 'Barlow';
+        src: url('https://cdnwf.bear.plus/fonts/Barlow-Regular.woff2');
+        font-weight: 400;
+    }
+    body{
+    margin: 0;
+    }
+  .tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('template-img4.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Barlow';
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tp-hero-title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 82px;
+    flex-direction: column;
+    transform: rotate(-5deg);
+  }
+  .tp-hero-title{
+    font-size: 120px;
+    font-weight: 700;
+    color: rgb(232, 89, 21);
+    line-height: 1em;
+  }
+  .tp-hero-sub{
+    font-size: 120px;
+    font-weight: 700;
+    color: white;
+    line-height: 1em;
+    margin-top: -10px;
+  }
+  .tp-hero-sale{
+    margin-bottom: 65px;
+    width: 100%;
+    padding-inline: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+  }
+  .tp-hero-sale-phone, .tp-hero-sale-address{
+    font-size: 24px;
+    line-height: 1em;
+    color: white;
+    font-weight: 400;
+  }
+  .tp-hero-sale-btn{
+    padding: 16px 40px;
+    background-color: rgb(232, 89, 21);
+    border-radius: 14px;
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+    border: none;
+  }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-title-wrap">
+                <h1 class="tp-hero-title">Delicious</h1>
+                <p class="tp-hero-sub">Hard liquor</p>
+            </div>
+            <div class="tp-hero-sale">
+              <div class="tp-hero-sale-contact">
+                <p class="tp-hero-sale-phone">123-456-7890</p>
+                <p class="tp-hero-sale-address">123 Anywhere St., Any City</p>
+              </div>
+              <button class="tp-hero-sale-btn">Order Now</button>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

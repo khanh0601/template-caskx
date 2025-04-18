@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+        font-family: "Noto";
+        src: url("https://font-public.canva.com/YAFdJpOISlU/0/NotoSerifDisplay-ExtraCondensedBold.93f3.cd33379e4639e375fd18ec5bb7a7e9bb.woff2");
+    }
+    @font-face {
+      font-family: "Forum";
+      src: url("https://font-public.canva.com/YACgEcnnqB4/0/subsets/Forum.ff57d0d9febdd79818b0bfc7b1e15dd8.d.979a5b68861f40f153c90c301305fc7.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .txt-poppins {
+      font-family: "Poppins";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template11.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Forum";
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .tp-hero-title {
+        font-size: 102px;
+        line-height: 1.2em;
+        color: white;
+        max-width: 400px;
+        font-weight: 400;
+        font-family: "Noto";
+        text-transform: uppercase;
+        margin-bottom: 12px;
+    }
+    .img{
+        width: 100%;
+    }
+    .tp-hero-inner-bg {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgb(153, 19, 19);
+        opacity: .85;
+        z-index: 0;
+    }
+    .tp-hero-inner {
+        padding-left: 50px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        height: 100%;
+        position: relative;
+        margin-left: auto;
+        
+    }
+
+    .tp-hero-sub {
+        color: rgb(250, 250, 250);
+        font-size: 32px;
+        margin-bottom: 116px;
+        text-transform: uppercase;
+        letter-spacing: 0.34em;
+    }
+    .tp-hero-dicount-type, .tp-hero-dicount-label {
+        color: white;
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .tp-hero-dicount-type {
+        letter-spacing: 0.461em;
+    }
+    .tp-hero-dicount-label {
+        letter-spacing: 0.094em;
+    }
+    .tp-hero-dicount-number {
+        font-size: 160px;
+        color: white;
+        line-height: .9em;
+        font-family: "Noto";
+    }
+    .tp-hero-btn {
+        border-radius: 14px;
+        color: white;
+        font-size: 32px;
+        text-transform: uppercase;
+        width: 210px;
+        height: 80px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 60px;
+        border: 4px solid white;
+        
+    }
+
+    .tp-hero-item{
+        position: relative;
+        z-index: 1;
+        width: 100%;
+    }
+    .tp-hero-item-line {
+        position: absolute;
+        inset: -80px -200px;
+        border: 3px solid white;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-inner">
+            <div class="tp-hero-inner-bg"></div>
+            <div class="tp-hero-item">
+                <div class="tp-hero-item-line"></div>
+                <div class="tp-hero-title-wrap">
+                    <h1 class="tp-hero-title">Draven Whiskey</h1>
+                </div>
+                <div class="tp-hero-sub">Premium Quality</div>
+                <div class="tp-hero-discount">
+                    <div class="tp-hero-dicount-label">SPecial Offer</div>
+                    <div class="tp-hero-dicount-inner">
+                        <div class="tp-hero-dicount-number">35%</div>
+                        <div class="tp-hero-dicount-type">Discount</div>
+                    </div>
+                </div>
+                <div class="tp-hero-btn">Buy Now</div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

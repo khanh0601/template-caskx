@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://font-public.canva.com/YAFdJjbTu24/0/Poppins-Medium.3e5b92bf15bc402148dbb23d9.b79740772ac87fd53b27808583c444a0.woff2");
+      font-weight: 500;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Bold.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template13-2.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Poppins";
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+    
+    .tp-hero-title {
+        font-size: 136px;
+        line-height: 1em;
+        font-weight: 700;
+        text-transform: uppercase;
+        flex: none;
+        white-space: nowrap;
+    }
+    .tp-hero-sub {
+        flex: 1;
+        font-size: 28px;
+    }
+    .tp-hero-title-inner {
+        display: flex;
+        gap: 32px;
+    }
+    .tp-hero-title-wrap {
+        padding-inline: 70px ;
+        margin-top: 80px;
+    }
+    .img{
+        width: 100%;
+    }
+    .tp-hero-title2 {
+        margin-left: 146px;
+    }
+    .tp-hero-bot-label {
+        font-size: 78px;
+        line-height: 1em;
+        text-align: end;
+        margin-right: 30px;
+        margin-bottom: 40px;
+    }
+    .tp-hero-bot-title {
+        font-size: 440px;
+        font-weight: 500;
+        line-height: .7em;
+        text-align: center;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-title-wrap">
+            <div class="tp-hero-title-inner">
+                <h1 class="tp-hero-title">whiskey</h1>
+                <div class="tp-hero-sub">More than a drink. A pause. A memory. A moment that stays.</div>
+            </div>
+            <h2 class="tp-hero-title tp-hero-title2">Tasting</h2>
+        </div>
+        <div class="tp-hero-bot">
+            <div class="tp-hero-bot-label">BUY NOW</div>
+            <div class="tp-hero-bot-title">CASK</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

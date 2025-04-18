@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'Barlow';
+        src: url('https://cdnwf.bear.plus/fonts/Barlow-Bold.woff2');
+        font-weight: 700;
+    }
+    body{
+    margin: 0;
+    }
+  .tp-hero {
+    min-height: 100vh;
+    background-image:url('template-img3.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Barlow';
+    display: flex;
+    justify-content: center;
+  }
+  .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .tp-hero-title-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 55px;
+    flex-direction: column;
+  }
+  .tp-hero-label{
+    font-family: "Heading Now";
+    font-size: 66px;
+    color: #ffffffaa;
+    position: absolute;
+    font-weight: 700;
+    margin-bottom: 38px;
+    letter-spacing: 0.409em;
+  }
+  .tp-hero-title {
+    font-size: 120px;
+    color: #000;
+    font-weight: 700;
+    line-height: 1.4em;
+    text-transform: uppercase;
+  }
+  .tp-hero-sub {
+    font-size: 42px;
+    color: #000;
+    font-weight: 700;
+    margin-top: -28px;
+    text-transform: uppercase;
+  }
+  .tp-hero-sale{
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .tp-hero-sale-percent{
+    font-size: 50px;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .line{
+    margin-block: 6px;
+    width: 200px;
+    height: 3px;
+    background-color: #000;
+  }
+  .tp-hero-sale-order{
+    font-size: 30px;
+    line-height: 1em;
+    font-weight: 700;
+    color: #000;
+    text-transform: uppercase;
+  }
+  .tp-hero-sale-desc{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+  }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-title-wrap">
+                <h1 class="tp-hero-title">whiskey</h1>
+                <p class="tp-hero-sub">whiskey barrel</p>
+            </div>
+            <div class="tp-hero-sale">
+              <p class="tp-hero-sale-percent">50% off</p>  
+              <div class="line"></div>
+              <p class="tp-hero-sale-order">order now</p>
+              <div class="line"></div>
+              <p class="tp-hero-sale-desc">lorem isump imuna</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

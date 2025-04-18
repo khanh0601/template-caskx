@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "SloopScriptPro";
+      src: url("https://cdnwf.bear.plus/fonts/SloopScriptPro-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+        font-family: "PlayFair";
+        src: url("https://cdnwf.bear.plus/fonts/PlayfairDisplayBold.woff2");
+    }
+    @font-face {
+        font-family: "Raleway";
+        src: url("https://cdnwf.bear.plus/fonts/Raleway-Regular.woff2");
+        font-weight: 400;
+    }
+    body {
+      margin: 0;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template3.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Raleway";
+      display: flex;
+      justify-content: center;
+      
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.469);
+    }
+   .tp-hero-label{
+    font-size: 160px;
+    color: rgb(246, 241, 236);
+    font-weight: 400;
+    line-height: 1em;
+    text-align: center;
+    font-family: "SloopScriptPro";
+    z-index: 2;
+    
+    
+   }
+   .tp-hero-label-clone{
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-text-stroke: 12.5495px rgb(17, 19, 21)
+   }
+   .tp-hero-title-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    position: relative;
+   }
+   .tp-hero-label-inner{
+    position: relative;
+    display: flex;
+    justify-content: center;
+   }
+   .tp-hero-label-wrap {
+    position: absolute;
+    top: -75px;
+   }
+   .tp-hero-title{
+    font-size: 154px;
+    color: rgb(246, 241, 236);
+    font-weight: 400;
+    line-height: .9em;
+    text-align: center;
+    font-family: "PlayFair";
+    max-width: 900px;
+    margin-inline: auto;
+    letter-spacing: -0.062em;
+    text-transform: uppercase;
+   }
+   .tp-hero-bot{
+    padding-inline: 60px;
+    margin-bottom: 100px;
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+   }
+   .tp-hero-bot-left{
+    font-size: 36px;
+    max-width: 200px;
+    font-weight: 400;
+    color: rgb(246, 241, 236);
+    line-height: 1em;
+   }
+   .tp-hero-bot-right{
+    font-size: 36px;
+    max-width: 200px;
+    font-weight: 400;
+    color: rgb(246, 241, 236);
+    line-height: 1em;
+    padding: 6px 12px;
+    border-radius: 90px;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+    margin-block: auto;
+   }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-title-wrap">
+          <div class="tp-hero-title">PREMIUM TASTE</div>
+          <div class="tp-hero-label-wrap">
+            <div class="tp-hero-label-inner">
+              <div class="tp-hero-label tp-hero-label-clone">Whiskey</div>
+              <div class="tp-hero-label">Whiskey</div>
+            </div>
+          </div>
+        </div>
+        <div class="tp-hero-bot">
+          <div class="tp-hero-bot-left">Nature  Patience  Whiskey</div>
+          <div class="tp-hero-bot-right">Caskx</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

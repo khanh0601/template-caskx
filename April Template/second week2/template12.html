@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Forum";
+      src: url("https://font-public.canva.com/YACgEcnnqB4/0/subsets/Forum.ff57d0d9febdd79818b0bfc7b1e15dd8.d.979a5b68861f40f153c90c301305fc7.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template12.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Forum";
+      display: flex;
+      justify-content: center;
+      color: rgb(208, 194, 177);
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .tp-hero-title {
+        font-size: 102px;
+        line-height: 1em;
+        max-width: 400px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    .img{
+        width: 100%;
+    }
+    .tp-hero-inner {
+        padding-left: 60px;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        margin-left: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .tp-hero-sub {
+        font-size: 26px;
+        margin-bottom: 150px;
+        line-height: 1.4em;
+        letter-spacing: 0.061em;
+        max-width: 440px;
+        text-transform: uppercase;
+    }
+    .tp-hero-dicount-inner{
+        display: flex;
+        margin-bottom: 85px;
+    }
+    .tp-hero-dicount-label {
+        font-size: 32px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .tp-hero-dicount-type {
+        margin-left: -5px;
+        margin-top:20px;
+        font-size: 48px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .tp-hero-dicount-number {
+        font-size: 156px;
+        line-height: 1em;
+    }
+    .tp-hero-btn {
+        border-radius: 150px;
+        height: 84px;
+        text-transform: uppercase;
+        width: 300px;
+        font-size: 40px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 1px solid white;
+        
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-inner">
+          <div class="tp-hero-title-wrap">
+            <h1 class="tp-hero-title">Whiskey tasting</h1>
+        </div>
+        <div class="tp-hero-sub txt-poppins">Great whiskey isn’t rushed. It’s crafted, waited for, and worth every second</div>
+        <div class="tp-hero-discount">
+            <div class="tp-hero-dicount-label txt-poppins">disc Up To</div>
+            <div class="tp-hero-dicount-inner">
+                <div class="tp-hero-dicount-number">20%</div>
+                <div class="tp-hero-dicount-type txt-poppins">Off</div>
+            </div>
+        </div>
+        <div class="tp-hero-btn txt-poppins">Join Now</div>
+      </div>
+    </section>
+  </body>
+</html>

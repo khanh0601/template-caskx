@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    @font-face {
+        font-family: 'JetBrainsMono';
+        src: url('https://cdnwf.bear.plus/fonts/JetBrainsMono-Bold.woff2');
+        font-weight: 700;
+        font-style: normal;
+    }
+    @font-face {
+        font-family: 'JetBrainsMono';
+        src: url('https://cdnwf.bear.plus/fonts/JetBrainsMono-Italic.woff2');
+        font-weight: 700;
+    }
+
+    body{
+    margin: 0;
+    }
+  .tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('./template-img2.png') ;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  .tp-hero-content {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .tp-hero-title{
+    font-family: 'LibreBaskerville';
+    font-size: 86px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 8px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+  }
+    .tp-hero-label{
+        font-family: 'JetBrainsMono';
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 0.3em;
+        margin-bottom: 16px;
+    }
+    .tp-hero-sub{
+        font-family: 'JetBrainsMono';
+        font-size: 24px;
+        color: #fff;
+        font-weight: 700;
+        font-style: italic;
+        letter-spacing: 0.3em;
+    }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-content">
+                    <p class="tp-hero-label">Premium barrel</p>
+                    <h1 class="tp-hero-title">Borcelle</h1>
+                    <p class="tp-hero-sub">Since 2040</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

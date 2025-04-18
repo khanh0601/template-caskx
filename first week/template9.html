@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Poppin';
+    src: url('https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2');
+}
+@font-face {
+    font-family: 'Anton';
+    src: url('https://cdnwf.bear.plus/fonts/Anton.woff2');
+}
+body{
+margin: 0;
+}
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('./template-img9.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Anton';
+    position: relative;
+}
+.tp-hero-content{
+    margin-top: 98px;
+    margin-left: 107px;
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+}
+.tp-hero-title{
+    font-size: 165px;
+    color: rgb(255, 248, 237);
+    line-height: 1em;
+    margin-bottom: 60px;
+    text-transform: uppercase;
+    max-width: 420px;
+    font-weight: 400;
+}
+.tp-hero-sub{
+    font-size: 95px;
+    color: rgb(255, 184, 41);
+    text-transform: uppercase;
+    margin-left: 208px;
+    font-weight: 400;
+    max-width: 185px;
+    line-height: 1em;
+}
+.tp-hero-name{
+    font-size: 32px;
+    line-height: 1.2em;
+    max-width: 180px;
+    text-align: end;
+    position: absolute;
+    top: 108px;
+    right: 108px;
+    color: rgb(255, 248, 237);
+    font-family: 'Poppin';
+    font-weight: 400;
+}
+
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-content">
+                <h1 class="tp-hero-title">Happy Hour</h1>
+                <div>
+                    <p class="tp-hero-sub">25%</p>
+                    <p class="tp-hero-sub">off</p>
+                </div>
+            </div>
+            <p class="tp-hero-name">Borcelle Cafe</p>
+        </div>
+    </section>
+</body>
+</html>

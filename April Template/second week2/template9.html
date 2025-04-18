@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+        font-family: "Vidaloka";
+        src: url("https://font-public.canva.com/YACgEdRnAX0/0/subsets/Vidaloka.035277b21f0395ac3826ca0519fd231.9b32b2ee4cada36e2430c26afc796ca.woff2");
+    }
+    @font-face {
+      font-family: "SortsMillGoudy";
+      src: url("https://font-public.canva.com/YADK4Fi0R2c/0/subsets/SortsMillGoudy-Regular.3fcfd5207e177b1b5.28d4ad718715f3bb5471ccda81c6ee6.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template9.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Vidaloka";
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      padding-bottom: 90px;
+      padding-inline: 50px;
+    }
+    
+    .tp-hero-title {
+        font-size: 93px;
+        line-height: 1em;
+        letter-spacing: -0.042em;
+        font-weight: 200;
+        text-transform: uppercase;
+        color: white;
+        max-width: 400px;
+    }
+    .tp-hero-sub {
+        font-size: 44px;
+        line-height: 1.3em;
+        color: rgb(255, 222, 89);
+        font-family: "SortsMillGoudy";
+    }
+    .tp-hero-discount-wrap {
+        color: white;
+    }
+    .tp-hero-dicount-label {
+        font-size: 35px;
+        line-height: 1em;
+        font-family: "SortsMillGoudy";
+        text-transform: uppercase;
+    }
+    .tp-hero-discount-inner {
+        display: flex;
+        align-items: center;
+    }
+    .tp-hero-dicount-number {
+        font-size: 120px;
+        line-height: 1em;
+        text-transform: uppercase;
+    }
+    .tp-hero-dicount-type {
+        font-size: 80px;
+        line-height: 1em;
+        text-transform: uppercase;
+        margin-left: 20px;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-title-wrap">
+            <div class="tp-hero-sub">Caskx</div>
+            <h1 class="tp-hero-title">Whiskey Moments</h1>
+        </div>
+        <div class="tp-hero-discount-wrap">
+            <div class="tp-hero-dicount-label">disc Up To</div>
+            <div class="tp-hero-discount-inner">
+                <div class="tp-hero-dicount-number">20%</div>
+                <div class="tp-hero-dicount-type">OFF</div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

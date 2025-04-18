@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+        font-family: "NotoSans";
+        src: url("https://font-public.canva.com/YAGLy65PgHg/0/newiconserif-regular.724b49dbaf50e033df0.0a54b052-02ee-4f6b-ac9e-fd8552dab4cc.woff2");
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Bold.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template8.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Poppins";
+      
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .tp-hero-title-wrap {
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding-inline: 50px;
+      margin-top: 30px;
+    }
+    .tp-hero-title {
+        font-family: "NotoSans";
+        font-size: 180px;
+        line-height: 1em;
+        letter-spacing: -0.042em;
+        font-weight: 200;
+        text-transform: uppercase;
+    }
+    .tp-hero-sub {
+        font-size: 32px;
+        line-height: 1.3em;
+        margin-top: 20px;
+        max-width: 310px;
+        text-align: end;
+    }
+    .tp-hero-bot {
+        color: white;
+        margin-top: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 62px;
+        align-items: flex-end;
+        margin-bottom: 40px;
+    }
+    .tp-hero-bot-title-wrap{
+        font-family: "NotoSans";
+        display: flex;
+    }
+    .tp-hero-bot-label {
+        font-size: 34px;
+        line-height: 1.4em;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    .tp-hero-bot-title {
+        font-size: 210px;
+        line-height: 1em;
+        text-transform: uppercase;
+        letter-spacing: 0;
+    }
+    .tp-hero-bot-sub {
+        font-size: 66px;
+        line-height: 1em;
+        text-transform: uppercase;
+        
+    }
+    .tp-hero-bot-right {
+        font-size: 189px;
+        /* text-transform: uppercase; */
+        font-family: "NotoSans";
+        letter-spacing: -0.042em;
+        line-height: 1em;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-title-wrap">
+            <h1 class="tp-hero-title">Timeless Whiskey</h1>
+            <div class="tp-hero-sub">Discover the Secret of Whiskey – The Perfect Blend</div>
+        </div>
+        <div class="tp-hero-bot">
+            <div class="tp-hero-bot-left">
+                <div class="tp-hero-bot-label">disc Up To</div>
+                <div class="tp-hero-bot-title-wrap">
+                    <div class="tp-hero-bot-title">20%</div>
+                    <div class="tp-hero-bot-sub">OFF</div>
+                </div>
+            </div>
+            <div class="tp-hero-bot-right">CASK</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Forum";
+      src: url("https://cdnwf.bear.plus/fonts/Forum.woff2");
+    }
+    @font-face {
+      font-family: "SloopScriptPro";
+      src: url("https://cdnwf.bear.plus/fonts/SloopScriptPro-Regular.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Poppins";
+      display: flex;
+      justify-content: center;
+      color: white;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      justify-content: space-between;
+    }
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .tp-hero-content {
+        background-color: rgb(245, 244, 235);
+        width: 40%;
+        flex: none;
+        padding-left: 80px;
+        position: relative;
+        z-index: 10;
+        padding-right: 44px;
+    }
+    .tp-hero-img {
+        width: 560px;
+        padding: 30px;
+        background-color: white;
+    }
+    .tp-hero-bg {
+        width: 60%;
+    }
+    .tp-hero-title {
+        margin-top: 20px;
+        font-size: 172px;
+        line-height: 1em;
+        font-family: "SloopScriptPro";
+        font-weight: 400;
+        color: rgb(176, 157, 93);
+        margin-bottom: 30px;
+    }
+    .tp-hero-sub {
+        font-size: 60px;
+        color: rgb(99, 98, 93);
+        padding-block: 32px;
+        text-transform: uppercase;
+        font-family: "Forum";
+    }
+    .tp-hero-desc {
+        font-size: 26px;
+        line-height: 1.3em;
+        color: rgb(99, 98, 93);
+        padding-block: 32px;
+    }
+    .tp-hero-line {
+        width: 100%;
+        height: 1px;
+        background-color: rgb(176, 157, 93);
+        margin-bottom: 100px;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-content">
+            <h1 class="tp-hero-title">Whiskey</h1>
+            <div class="tp-hero-img"><img src="template-img14.jpg" alt="" class="img"></div>
+            <div class="tp-hero-sub">Get 30% off</div>
+            <div class="tp-hero-line"></div>
+            <div class="tp-hero-desc">Aged to Perfection, Sipped with Pride</div>
+        </div>
+        <div class="tp-hero-bg">
+            <img src="./template14-bg.jpg" alt="" class="img">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

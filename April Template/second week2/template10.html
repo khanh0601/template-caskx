@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+        font-family: "Dream";
+        src: url("https://cdnwf.bear.plus/fonts/Dream-Avenue.woff2");
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Bold.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .txt-poppins {
+      font-family: "Poppins";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url("template10.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Dream";
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    .tp-hero-title {
+        font-size: 102px;
+        line-height: 1em;
+        color: white;
+        max-width: 400px;
+        font-weight: 400;
+    }
+    .tp-hero-title:nth-child(2){
+        color: rgb(225, 156, 32);
+    }
+    .img{
+        width: 100%;
+    }
+    .tp-hero-ic-top {
+        width: 100px;
+        margin-bottom: 45px;
+    }
+    .tp-hero-inner {
+        padding-left: 120px;
+        width: 50%;
+        background-color: black;
+        height: 100%;
+        position: relative;
+        
+    }
+    .tp-hero-line {
+        width: 40px;
+        height: 4px;
+        background-color: white;
+        margin-block: 50px;
+    }
+    .tp-hero-sub {
+        color: rgb(250, 250, 250);
+        font-size: 32px;
+        margin-bottom: 80px;
+        max-width: 293px;
+    }
+    .tp-hero-dicount-inner{
+        display: flex;
+        margin-bottom: 45px;
+    }
+    .tp-hero-dicount-type, .tp-hero-dicount-label {
+        color: white;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    .tp-hero-dicount-type {
+        margin-left: -10px;
+        margin-top: -5px;
+    }
+    .tp-hero-dicount-number {
+        font-size: 110px;
+        color: rgb(225, 156, 32);
+    }
+    .tp-hero-btn {
+        background-color: rgb(225, 156, 32);
+        border-radius: 14px;
+        padding: 12px 30px;
+        color: black;
+        font-size: 32px;
+        width: 320px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .tp-hero-ic-bot {
+        width: 100px;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(50%, 30%);
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-inner">
+            <div class="tp-hero-ic-top">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/2031_icon2.png" alt="" class="img">
+            </div>
+          <div class="tp-hero-title-wrap">
+            <h1 class="tp-hero-title">Timeless</h1>
+            <h2 class="tp-hero-title">Whiskey</h2>
+        </div>
+        <div class="tp-hero-line"></div>
+        <div class="tp-hero-sub txt-poppins">Savor Whiskey, Enjoy the Moment</div>
+        <div class="tp-hero-discount">
+            <div class="tp-hero-dicount-label txt-poppins">Get Discount</div>
+            <div class="tp-hero-dicount-inner">
+                <div class="tp-hero-dicount-number">20%</div>
+                <div class="tp-hero-dicount-type txt-poppins">Off</div>
+            </div>
+        </div>
+        <div class="tp-hero-btn txt-poppins">Buy Now</div>
+        <div class="tp-hero-ic-bot">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2031_icon2.png" alt="" class="img">
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

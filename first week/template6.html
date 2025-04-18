@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('https://cdnwf.bear.plus/fonts/LeagueSpartan.woff2');
+}
+body{
+margin: 0;
+}
+.container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('./template6-img.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'LeagueSpartan';
+}
+.tp-hero-content{
+    margin-top: 98px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.img{
+    width: 100%;
+}
+.tp-hero-img{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
+.tp-hero-btn{
+    position: absolute;
+    bottom: 100px;
+}
+.tp-hero-content{
+    position: relative;
+    z-index: 1;
+}
+.tp-hero-btn{
+    padding: 12px 23px;
+    border-radius: 99px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #BF131F; 
+    text-transform: uppercase;
+    line-height: 1em;
+    border: none;
+}
+.tp-hero-btn-ic{
+    width: 10px;
+    display: flex;
+}
+.tp-hero-title{
+    font-size: 144px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+}
+.tp-hero-title.deco{
+    caret-color: rgb(255, 255, 255);
+    -webkit-text-stroke: 6px rgb(255, 255, 255);
+    -webkit-text-stroke-width: 6px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+}
+.tp-hero-label{
+    font-size: 30px;
+    color: white;
+    margin-bottom: 36px;
+    text-transform: uppercase;
+}
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-content">
+                <p class="tp-hero-label">discount 35% off</p>
+                <h2 class="tp-hero-title">Sale</h2>
+                <h2 class="tp-hero-title deco">Sale</h2>
+                <h2 class="tp-hero-title">Sale</h2>
+            </div>
+            <div class="tp-hero-img">
+                <img src="/template6-deco.png" alt="" class="img">
+            </div>
+            <button class="tp-hero-btn">
+                <span>Buy Now</span>
+                <div class="tp-hero-btn-ic"><img src="https://s3.amazonaws.com/caskx-base/1/library/1877_btn-ic.png" alt="" class="img"></div>
+            </button>
+        </div>
+    </section>
+</body>
+</html>

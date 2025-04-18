@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "luxurious";
+      src: url("https://cdnwf.bear.plus/fonts/luxurious.woff2");
+    }
+    @font-face {
+        font-family: "Garet";
+        src: url("https://cdnwf.bear.plus/fonts/Garet-Regular.woff2");
+        font-weight: 400;
+    }
+    @font-face {
+        font-family: "Garet";
+        src: url("https://cdnwf.bear.plus/fonts/Garet-Bold.woff2");
+        font-weight: 700;
+    }
+    @font-face {
+        font-family: "tan";
+        src: url("https://cdnwf.bear.plus/fonts/TAN.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      padding: 64px 165px 98px 165px;
+      background-image: url("template4.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Garet";
+      display: flex;
+      justify-content: center;
+      
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+   .tp-hero-name {
+      font-size: 18px;
+      line-height: 1em;
+      color: white;
+      text-align: center;
+      margin-bottom: 72px ;
+   }
+    .tp-hero-label {
+        font-size: 45px;
+        line-height: 1em;
+        color: rgb(255, 228, 134);
+        text-align: center;
+        font-family: 'tan';
+        letter-spacing: -.03em;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .tp-hero-title {
+        font-size: 145px;
+        line-height: 1em;
+        color: rgb(255, 222, 89);
+        text-align: center;
+        font-family: "luxurious";
+        margin-top: -20px;
+        line-height: 1em;
+        font-weight: 400;
+        margin-bottom: 30px;
+    }
+    .tp-hero-sub-wrap {
+        display: flex;
+        align-items: center;
+        column-gap: 42px;
+        justify-content: center;
+    }
+    .tp-hero-sub-txt {
+        font-size: 20px;
+        line-height: 1.2em;
+        width: 341px;
+        font-weight: 400;
+        color: white
+    }
+    .tp-hero-sub-space {
+        width: 1px;
+        height: 50px;
+        background-color: white;
+    }
+    .tp-hero-price-label {
+        font-size: 20px;
+        line-height: 1.2em;
+        color: white;
+        font-weight: 400;
+        margin-right: 10px;
+        text-transform: uppercase;
+        max-width: 103px;
+    }
+    .tp-hero-price-wrap {
+        display: flex;
+        align-items: center;
+    }
+    .tp-hero-price-title {
+        font-size: 44px;
+        font-weight: 700;
+        color: rgb(255, 241, 230);
+    }
+    .tp-hero-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 222, 89);
+        padding: 20px 20px;
+        border-radius: 200px;
+        text-decoration: none;
+        width: max-content;
+        font-size: 24px;
+        color: black;
+        margin-top: auto;
+        min-width: 240px;
+        text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-name">Caskx</div>
+        <div class="tp-hero-label">Taste - Depth - Legacy</div>
+        <h1 class="tp-hero-title">Whiskey, Refined</h1>
+        <div class="tp-hero-sub-wrap">
+          <div class="tp-hero-sub-txt">Whiskey a timeless spirit, crafted with care and character.</div>
+          <div class="tp-hero-sub-space"></div>
+          <div class="tp-hero-price-wrap">
+            <div class="tp-hero-price-label">price per cask</div>
+            <div class="tp-hero-price-title">$250.00</div>
+          </div>
+        </div>
+        <a href="" class="tp-hero-btn"><span>Buy Now</span></a>
+      </div>
+    </section>
+  </body>
+</html>

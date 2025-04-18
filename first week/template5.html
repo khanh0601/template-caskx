@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('https://cdnwf.bear.plus/fonts/Barlow-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Barlow';
+    src: url('https://cdnwf.bear.plus/fonts/Barlow-Bold.woff2');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'BarlowSemiCondense';
+    src: url('https://cdnwf.bear.plus/fonts/BarlowSemiCondensed-Regular.woff2');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'BarlowSemiCondense';
+    src: url('https://cdnwf.bear.plus/fonts/BarlowSemiCondensed-Bold.woff2');
+    font-weight: 700;
+}
+body{
+margin: 0;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.tp-hero {
+    width: 100%;
+    aspect-ratio: 1234/645;
+    background-image:url('./template-img5.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Barlow';
+}
+.tp-hero-content{
+    margin-top: 60px;
+    margin-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+.tp-hero-label-wrap{
+    display: flex;
+    column-gap: 14px;
+    margin-bottom: 36px;
+    align-items: center;
+}
+.tp-hero-logo{
+    width: 40px;
+}
+.img{
+    width: 100%;
+}
+.tp-hero-label{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+.tp-hero-title{
+    font-size: 83px;
+    font-weight: 700;
+    color: white;
+    line-height: 1em;
+    margin-bottom: 10px;
+    font-family: 'BarlowSemiCondense';
+    max-width: 480px;
+    text-transform: uppercase;
+}
+.tp-hero-sub{
+    font-size: 19px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4em;
+    max-width: 350px;
+    margin-bottom: 50px;
+}
+.tp-hero-btn{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-transform: uppercase;
+    color: rgb(75, 84, 65);
+    background-color: white;
+    border-radius: 100px;
+    padding: 30px 30px;
+    min-width: 240px;
+    text-align: center;
+    border: none;
+    width: fit-content;
+
+}
+.tp-hero-contact{
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-bottom: 60px;
+    margin-left: 42px;
+}
+.tp-hero-contact-label{
+    font-size: 16px;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 3px;
+}
+.tp-hero-phone{
+    font-size: 28px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 4px;
+}
+.tp-hero-website{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+.tp-hero-sale-inner{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 198, 0);
+    clip-path: url(#__id16);
+    flex-direction: column;
+}
+.tp-hero-sale{
+    position: relative;
+    width: 142px;
+    height: 142px;
+    margin-left: -30px;
+    margin-top: 70px;
+}
+.tp-hero-sale svg{
+    height: 0;
+    width: 0;
+    position: absolute;
+}
+.tp-hero-sale svg path{
+    transform: scale(0.284608, 0.284608);
+}
+.tp-hero-sale-percent{
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.1em;
+    color: black;
+}
+.tp-hero-sale-type{
+    font-size: 28px;
+    font-weight: 400;
+    color: black;
+}
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-content">
+                    <div class="tp-hero-label-wrap">
+                        <div class="tp-hero-logo">
+                            <img src="./template5-logo.png" alt="" class="img">
+                        </div>
+                        <p class="tp-hero-label">your logo</p>
+                    </div>
+                    <h1 class="tp-hero-title">Modern furniture</h1>
+                    <p class="tp-hero-sub">Your one-stop destination for unique furniture design with high quality. </p>
+                    <button class="tp-hero-btn">shop now</button>
+            </div>
+            <div class="tp-hero-contact">
+                <p class="tp-hero-contact-label">call for delivery</p>
+                <p class="tp-hero-phone">+123 456 7890</p>
+                <p class="tp-hero-website">www.sample.com</p>
+            </div>
+            <div class="tp-hero-sale">
+                <svg class="_7KaXww"><defs><clipPath id="__id16"><path d="M498.5961615353859,250.5C498.5961615353859,224.35825669732108 511.6169532187125,196.61395441823274 503.60415833666536,173.07636945221913C495.391043582567,148.63734506197522 467.54658136745303,133.61335465813676 452.2221111555378,113.28088764494203C436.69732107157137,92.74810075969611 430.28708516593366,62.80027988804479 408.953018792483,47.87644942023191C387.81927229108356,33.15293882447021 356.2688924430228,36.45821671331468 330.92842862854855,28.445421831267492C306.38924430227905,20.833266693322674 283.0519792083167,0 255.90863654538185,0C228.76529388244703,0 205.32786885245903,20.733106757297083 180.8888444622151,28.445421831267492C155.5483806477409,36.358056777289086 123.89784086365455,33.05277888844462 102.7640943622551,47.87644942023191C81.43002798880448,62.80027988804479 75.01979208316675,92.74810075969611 59.49500199920032,113.28088764494203C44.070371851259495,133.61335465813676 16.326069572171132,148.63734506197522 8.012794882047181,173.07636945221913C0.10015993602558977,196.61395441823274 13.02079168332667,224.35825669732108 13.02079168332667,250.5C13.02079168332667,276.64174330267895 0,304.3860455817673 8.012794882047181,327.9236305477809C16.22590963614554,352.36265493802483 44.070371851259495,367.3866453418633 59.39484206317473,387.71911235505803C74.91963214714114,408.25189924030394 81.32986805277889,438.19972011195523 102.66393442622952,453.1235505797681C123.79768092762895,467.9472211115554 155.34806077568973,464.6419432227109 180.78868452618954,472.5545781687325C205.32786885245903,480.1667333066773 228.66513394642146,501 255.80847660935626,501C282.9518192722911,501 306.38924430227905,480.26689324270296 330.828268692523,472.5545781687325C356.16873250699723,464.6419432227109 387.81927229108356,467.9472211115554 408.953018792483,453.1235505797681C430.28708516593366,438.19972011195523 436.69732107157137,408.25189924030394 452.2221111555378,387.71911235505803C467.6467413034786,367.3866453418633 495.391043582567,352.36265493802483 503.60415833666536,327.9236305477809C511.6169532187125,304.2858856457417 498.5961615353859,276.54158336665336 498.5961615353859,250.5Z"></path></clipPath></defs></svg>
+                <div class="tp-hero-sale-inner">
+                    <div class="tp-hero-sale-percent">50%</div>
+                    <div class="tp-hero-sale-type">OFF</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

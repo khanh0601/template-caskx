@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+        font-family: "Sloop";
+        src: url("https://font-public.canva.com/YAEz2L9phwY/0/subsets/SloopScriptPro-Regular.977d1e2936b54e31c.7a5ed98394a9d7badad1c99cad31622.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: black;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+    .tp-hero-left {
+        width: 50%;
+        background-color: rgb(31, 58, 98);
+        height: 100%;
+    }
+    .tp-hero-ic-top {
+        width: 320px;
+        margin-bottom: 20px;
+        transform: rotate(180deg);
+        opacity: .6;
+        margin-top: -40px;
+    }
+    .tp-hero-ic-bot {
+        width: 360px;
+        margin-bottom: 20px;
+        opacity: .6;
+        position: absolute;
+        bottom: -40px;
+        left: 220px;
+        margin-top: -40px;
+    }
+    .tp-hero-title-wrap {
+        padding-block: 55px 32px;
+        background: linear-gradient(to right, #5477A3 0%, #1F3A6200 100%);
+        margin-bottom: 73px;
+    }
+    .tp-hero-title {
+        font-size: 148px;
+        font-weight: 700;
+        line-height: 1;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    .tp-hero-sub {
+        font-size: 93px;
+        color: rgb(250, 195, 15);
+        margin-top: -60px;
+        font-family: "Sloop";
+        text-align: center;
+        line-height: 1;
+    }
+    .tp-hero-right {
+        width: 50%;
+        height: 100%;
+    }
+   .tp-hero-right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .tp-hero-desc {
+        margin-left: 67px;
+        font-size: 32px;
+        max-width: 433px;
+        color: white;
+        line-height: 1.3;
+    }
+    .tp-hero-logo {
+        position: absolute;
+        left: 63px;
+        bottom: 63px;
+        width: 200px;
+    }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-left">
+                <div class="tp-hero-ic-top">
+                    <img src="https://s3.amazonaws.com/caskx-base/1/library/2050_template17-ic.png" alt="" class="img">
+                </div>
+                <div class="tp-hero-title-wrap">
+                    <div class="tp-hero-title">Whiskey</div>
+                    <div class="tp-hero-sub">Premium</div>
+                </div>
+                <div class="tp-hero-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida.</div>
+                <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img"></div>
+                <div class="tp-hero-ic-bot">
+                    <img src="https://s3.amazonaws.com/caskx-base/1/library/2050_template17-ic.png" alt="" class="img">
+                </div>
+            </div>
+            <div class="tp-hero-right">
+                <img src="template17.jpg" alt="" class="img">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

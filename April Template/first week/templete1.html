@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Dream-Avenue";
+      src: url("https://cdnwf.bear.plus/fonts/Dream-Avenue.woff2");
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Poppins";
+      src: url("https://cdnwf.bear.plus/fonts/Poppins-Bold.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      padding: 64px 65px 0 65px;
+      background-image: url("template2.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Poppins";
+      display: flex;
+      justify-content: center;
+    }
+    .container {
+      width: 100%;
+    }
+    .tp-hero-title-wrap {
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 100%;
+    }
+    .tp-hero-title-wrap p {
+      font-size: 144px;
+      line-height: 1em;
+      font-family: "Dream-Avenue";
+    }
+    .tp-hero-title-wrap p:nth-child(2) {
+        text-align: end;
+    }
+    .img {
+        width: 100%;
+    }
+    .tp-hero-title-inner{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .tp-hero-title-ic {
+        width: 329px;
+    }
+    .tp-hero-promo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background-color: rgb(243, 196, 70);
+        padding: 30px;
+        height: 100%;
+        min-height: 256px;
+        aspect-ratio: 1/1;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+    .tp-hero-sub-wrap{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .tp-hero-sub {
+        font-size: 24px;
+        font-weight: 400;
+        color: white;
+        max-width: 244px;
+    }
+    .tp-hero-promo-label{
+        font-size: 21px;
+        font-weight: 400;
+    }
+    .tp-hero-promo-percent-txt {
+        font-size: 100px;
+        line-height: 1em;
+        font-weight: 700;
+    }
+    .tp-hero-promo-percent{
+        display: flex;
+    }
+    .tp-hero-promo-unit-txt1 {
+        font-size: 50px;
+        line-height: 1em;
+        font-weight: 700;
+        margin-top : 10px;
+    }
+   .tp-hero-promo-unit-txt2 {
+        font-size: 30px;
+        line-height: 1em;
+        font-weight: 700;
+    }
+    p.tp-hero-promo-desc {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-title-wrap">
+          <p class="tp-hero-title">Whiskey</p>
+          <div class="tp-hero-title-inner">
+            <div class="tp-hero-title-ic">
+                <img src="./template-1-ic.png" alt="" class="img">
+            </div>
+            <p class="tp-hero-title2">Discount</p>
+          </div>
+        </div>
+        <div class="tp-hero-sub-wrap">
+            <p class="tp-hero-sub">Get Your Whiskey Fix with Our Exclusive Discounts!</p>
+            <div class="tp-hero-promo">
+                <p class="tp-hero-promo-label">Get Up To</p>
+                <div class="tp-hero-promo-percent">
+                    <p class="tp-hero-promo-percent-txt">20</p>
+                    <div class="tp-hero-promo-unit">
+                        <p class="tp-hero-promo-unit-txt1">%</p>
+                        <p class="tp-hero-promo-unit-txt2">OFF</p>
+                    </div>
+                </div>
+                <p class="tp-hero-promo-desc">limited offer</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

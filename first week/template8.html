@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                
+    <title>Document</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'LeagueSpartan';
+    src: url('https://cdnwf.bear.plus/fonts/LeagueSpartan.woff2');
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url('https://cdnwf.bear.plus/fonts/Arimo.woff2');
+}
+body{
+margin: 0;
+}
+.container{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+.tp-hero {
+    width: 100%;
+    aspect-ratio: 1;
+    background-image:url('./template-img8.jpg') ;
+    background-size: cover;
+    background-position: center;
+    font-family: 'LeagueSpartan';
+}
+.tp-hero-content{
+    margin-top: 108px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    max-width: 465px;
+}
+.tp-hero-title{
+    font-size: 90px;
+    color: white;
+    line-height: 1em;
+    margin-bottom: 85px;
+    text-transform: uppercase;
+}
+.tp-hero-sub{
+    font-size: 50px;
+    color: rgb(225, 195, 64);
+    text-transform: uppercase;
+    font-family: 'Arimo';
+    margin-bottom: 38px;
+}
+.tp-hero-open-label{
+    font-size: 50px;
+    color: white;
+    font-family: 'Arimo';
+    margin-bottom: 8px
+}
+.tp-hero-open-title{
+    font-size: 38px;
+    color: white;
+    font-family: 'Arimo';
+    margin-bottom: 52px;
+}
+.tp-hero-address{
+    font-size: 52px;
+    color: rgb(225, 195, 64);
+    font-weight: 700;  
+    max-width: 300px;
+    line-height: 1em
+}
+
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-content">
+                <h1 class="tp-hero-title">beer day chill</h1>
+                <p class="tp-hero-sub">Let's cheers together</p>
+                <p class="tp-hero-open-label">Open hour :</p>
+                <p class="tp-hero-open-title">09:00 AM - 10:00 PM</p>
+                <p class="tp-hero-address">AT BEERS CLUB</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

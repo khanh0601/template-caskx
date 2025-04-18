@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "SloopScriptPro";
+      src: url("https://cdnwf.bear.plus/fonts/SloopScriptPro-Regular.woff2");
+    }
+    @font-face {
+        font-family: "Kudryashev-Display";
+        src: url("https://cdnwf.bear.plus/fonts/Kudryashev-Display_Contrast.woff2");
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("https://cdnwf.bear.plus/fonts/Inter-Regular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("https://cdnwf.bear.plus/fonts/Inter-Bold.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      padding: 64px 65px 0 65px;
+      background-image: url("template2.jpg");
+      background-size: cover;
+      background-position: center;
+      font-family: "Inter";
+      display: flex;
+      justify-content: center;
+      
+    }
+    .container {
+      width: 100%;
+    }
+    .tp-hero-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .tp-hero-head p{
+        font-size: 24px;
+        color: rgb(255, 239, 146);
+        line-height: 1.2em;
+        text-transform: uppercase;
+    }
+    .tp-hero-title1 {
+        font-size: 140px;
+        line-height: 1em;
+         color: rgb(255, 239, 146);
+         text-align: center;
+         font-family: "Kudryashev-Display";
+         font-weight: 400;
+    }
+    .tp-hero-title2 {
+        font-family: "SloopScriptPro";
+        font-size: 140px;
+        line-height: 1em;
+        text-align: center;
+         color: rgb(255, 239, 146);
+         font-weight: 400;
+         margin-top: -50px;
+         position: relative;
+         z-index: 4;
+    }
+    .tp-hero-bot {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 360px;
+        color: rgb(255, 239, 146);
+    }
+    .tp-hero-bot-item-title {
+        font-size: 36px;
+        margin-bottom: 4px;
+        line-height: 1.2em;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    .tp-hero-bot-item-sub {
+        font-size: 26px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+    .tp-hero-bot-item:nth-child(2) .tp-hero-bot-item-sub {
+        text-align: end;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-head">
+            <p class="tp-hero-head-txt">CAskx</p>
+            <p class="tp-hero-head-txt">05-03-2025</p>
+        </div>
+        <h1 class="tp-hero-title1">Whiskey</h1>
+        <h2 class="tp-hero-title2">Happy Hours</h2>
+        <div class="tp-hero-bot">
+            <div class="tp-hero-bot-item">
+                <p class="tp-hero-bot-item-title">30% OFF</p>
+                <p class="tp-hero-bot-item-sub">discount</p>
+            </div>
+            <div class="tp-hero-bot-item">
+                <p class="tp-hero-bot-item-title">buy 1 get 1</p>
+                <p class="tp-hero-bot-item-sub">free Whiskey</p>
+            </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
