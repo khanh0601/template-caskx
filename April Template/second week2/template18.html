@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+        font-family: "Sloop";
+        src: url("https://font-public.canva.com/YAEz2L9phwY/0/subsets/SloopScriptPro-Regular.977d1e2936b54e31c.7a5ed98394a9d7badad1c99cad31622.woff2");
+    }
+    body {
+      margin: 0;
+      
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: black;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+   .tp-hero-left {
+    width: 47%;
+    background-color: rgb(228, 214, 205); 
+    height: 100%;
+    padding-left: 80px;
+    padding-top: 55px;
+   }
+   .tp-hero-logo {
+    width: 260px;
+    margin-bottom: 45px;
+   }
+   .tp-hero-img {
+    margin-right: -145px;
+     aspect-ratio: 307/444;
+   }
+   .tp-hero-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   }
+   .tp-hero-title{
+    margin-top: 132px;
+    font-size: 93px;
+    line-height: 1.1em;
+    text-align: end;
+    font-weight: 700;
+    color: rgb(39, 24, 17);
+    margin-bottom: 77px;
+    text-shadow: rgba(255, 255, 255, 0.4) 4.12479px 4.12479px 0px;
+   }
+   .tp-hero-right {
+    width: 53%;
+    padding-right: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+   }
+   .tp-hero-sub {
+    font-size: 30px;
+    color: rgb(26, 26, 26);
+    line-height: 1.2em;
+    margin-bottom: 106px;
+    max-width: 355px;
+   }
+   .tp-hero-btn-wrap {
+    width: calc(100% - 65px);
+    display: flex;
+    justify-content: end;
+    padding: 80px 80px 80px 0;
+    background-color: rgb(228, 214, 205);
+    /* margin-left: 65px; */
+    transform: translateX(80px);
+   }
+   .tp-hero-btn {
+    width: 260px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 42px;
+    color: white;
+    background-color: rgb(175, 119, 85);
+    justify-content: center;
+    border-radius: 40px;
+   }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-left">
+              <div class="tp-hero-logo">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/2044_logo2.webp" alt="" class="img">  
+              </div>
+              <div class="tp-hero-img">
+                <img src="template17.jpg" alt="" class="img">
+              </div>
+            </div>
+            <div class="tp-hero-right">
+              <div class="tp-hero-title">Whiskey Aged to Perfection</div>
+              <div class="tp-hero-sub">Whiskey is not just a drink — it's a moment bottled in time.
+                From the deep char of oak barrels to the slow, patient aging process, every drop carries a story</div>
+                <div class="tp-hero-btn-wrap">
+                  <div class="tp-hero-btn">Buy nOW</div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
