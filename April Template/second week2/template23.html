@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-color: white;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+   .tp-hero-logo {
+    width: 200px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: 45px;
+   }
+   .tp-hero-title{
+    font-size: 106px;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: black;
+    max-width: 920px;
+    margin-inline: auto;
+   }
+   .tp-hero-title-wrap {
+    margin-top: 36px;
+    margin-bottom: 44px;
+  }
+  .tp-hero-img {
+    width: 100%;
+    margin-inline: auto;
+    display: flex;
+    position: relative;
+  }
+  .tp-hero-sub {
+    font-size: 40px;
+    color: black;
+    line-height: 1.3em;
+    margin-bottom: 20px;
+    max-width: 578px;
+    margin-inline: auto;
+    text-align: center;
+  }
+  .tp-hero-btn {
+    width: 200px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAC30F;
+    font-size: 36px;
+    line-height: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-inline: auto;
+    border-radius: 100px;
+    color: black;
+    padding-top: 10px;
+  }
+  .tp-hero-deco {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    z-index: 2;
+  }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-deco">
+                <img src="./template23-ic.png" class="img" alt="">
+            </div>
+            <div class="tp-hero-logo">
+              <img src="https://s3.amazonaws.com/caskx-base/1/library/2044_logo2.webp" alt="" class="img">
+            </div>
+          <div class="tp-hero-title-wrap">
+            <div class="tp-hero-title">Whiskey of Distinction</div>
+            <div class="tp-hero-sub">Aged with time, layered with character. One sip ignites boldness and emotion.</div>
+            <div class="tp-hero-btn">BUY NOW</div>
+          </div>
+          <div class="tp-hero-img">
+            <img src="./template23.jpg" class="img" alt="">
+            <div class="tp-hero-img-overlay"></div>
+          </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>GLSL + Three.js Example</title>
+  <style>
+    body { margin: 0; overflow: hidden; }
+    canvas { display: block; }
+  </style>
+</head>
+<body>
+  <!-- Vertex Shader -->
+  <script id="vertexShader" type="x-shader/x-vertex">
+    varying vec2 vUv;
+
+    void main() {
+      vUv = uv;
+      gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+    }
+  </script>
+
+  <!-- Fragment Shader -->
+  <script id="fragmentShader" type="x-shader/x-fragment">
+    precision mediump float;
+    uniform sampler2D u_texture;
+    uniform vec3 u_color;
+    uniform float u_mix;
+    varying vec2 vUv;
+
+    void main() {
+      vec4 texColor = texture2D(u_texture, vUv);
+      vec4 colorOverlay = vec4(u_color, 1.0);
+      gl_FragColor = mix(texColor, colorOverlay, u_mix);
+    }
+  </script>
+
+  <!-- Load Three.js -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.152.2/build/three.min.js"></script>
+  <script>
+    // Scene Setup
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 1, 10);
+    camera.position.z = 2;
+
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    document.body.appendChild(renderer.domElement);
+
+    // Load Texture
+    const texture = new THREE.TextureLoader().load('https://threejsfundamentals.org/threejs/resources/images/wall.jpg');
+
+    // Shader Material
+    const material = new THREE.ShaderMaterial({
+      vertexShader: document.getElementById('vertexShader').textContent,
+      fragmentShader: document.getElementById('fragmentShader').textContent,
+      uniforms: {
+        u_texture: { value: texture },
+        u_color: { value: new THREE.Color(65/255, 179/255, 59/255) }, // màu đỏ
+        u_mix: { value: 0.8 } // 30% màu đỏ, 70% texture
+      }
+    });
+
+    // Geometry + Mesh
+    const geometry = new THREE.PlaneGeometry(1, 2);
+    const mesh = new THREE.Mesh(geometry, material);
+    scene.add(mesh);
+
+    // Render Loop
+    function animate() {
+      requestAnimationFrame(animate);
+      mesh.rotation.z += 0.01;
+      renderer.render(scene, camera);
+    }
+    animate();
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-image: url('./template24.jpg');
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      align-items: end;
+      justify-content: end;
+    }
+   .tp-hero-body {
+    height: 50%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: end;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+   }
+   .img {
+    width: 100%;
+    object-fit: cover;
+   }
+   .tp-hero-logo {
+    width: 240px;
+    margin-block: 69px 55px;
+    margin-inline: auto;
+   }
+   .tp-hero-content {
+    display: flex;
+    width: 100%;
+    padding-inline: 60px 100px;
+    gap: 50px;
+   }
+   .tp-hero-title {
+    font-size: 66px;
+    font-weight: 700;
+    text-transform: uppercase;
+    width: 250px;
+    text-align: end;
+    flex: none;
+   }
+   .tp-hero-sub {
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    flex: 1;
+    text-align: center;
+    line-height: 1.5em;
+   }
+   .tp-hero-line {
+    width: 1px;
+    height: 85%;
+    background-color: white;
+    opacity: .6;
+    margin-top: 5px;
+   }
+   .tp-hero-btn {
+    height: 70px;
+    width: 180px;
+    margin-top: 10px;
+    flex: none;
+    background-color: #FAC30F;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    line-height: 1em;
+    padding-top: 10px;
+    font-weight: 400;
+    color: black;
+   }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+           <div class="tp-hero-body">
+            <div class="tp-hero-content">
+                <div class="tp-hero-title">Whiskey Vibes Only</div>
+                <div class="tp-hero-line"></div>
+                <div class="tp-hero-sub">Whiskey - the amber essence of refinement. Aged with time, layered with character. One sip ignites boldness and emotion.</div>
+                <div class="tp-hero-line"></div>
+                <div class="tp-hero-btn">Buy now</div>
+            </div>
+            <div class="tp-hero-logo">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+            </div>
+           </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-image: url('./template22-bg.webp');
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+    }
+   .tp-hero-logo {
+    width: 200px;
+    margin-top: 50px;
+    margin-inline: auto;
+   }
+   .tp-hero-title{
+    font-size: 120px;
+    line-height: 1em;
+    text-align: center;
+    font-weight: 400;
+    /* margin-top:-20px; */
+    text-transform: uppercase;
+    color: white;
+    max-width: 920px;
+    margin-inline: auto;
+   }
+   .tp-hero-title-wrap {
+    margin-top: 49px;
+    margin-bottom: 25px;
+  }
+  .tp-hero-img {
+    width: 60%;
+    margin-inline: auto;
+    padding: 40px;
+    display: flex;
+    position: relative;
+  }
+  .tp-hero-img-overlay {
+    inset: 0;
+    position: absolute;
+    background: white;
+    opacity: 0.5;
+    border-radius: 88px;
+    z-index: 1;
+  }
+  .tp-hero-img img{
+    overflow: hidden;
+    border-radius: 60px;
+    position: relative;
+    z-index: 2;
+    aspect-ratio: 1;
+  }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+          <div class="tp-hero-title-wrap">
+            <div class="tp-hero-title">Turn Whisky Passion Into Smart Investment</div>
+          </div>
+          <div class="tp-hero-img">
+            <img src="./template22.jpg" class="img" alt="">
+            <div class="tp-hero-img-overlay"></div>
+          </div>
+          <div class="tp-hero-logo">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+          </div>
+        </div>
+    </section>
+</body>
+</html>

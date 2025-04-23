@@ -12,17 +12,15 @@
       box-sizing: border-box;
     }
     @font-face {
-      font-family: "Rustic";
-      src: url("https://font-public.canva.com/YAEqe6I6rI4/0/subsets/Rustic_Printed_Stamp.39c7ea335ed6cec70e6.a29eb7acdbe169630def0fd94b9ff8e.woff2");
+      font-family: "Gatwick";
+      src: url("https://font-public.canva.com/YAFdJh5vTu8/0/Gatwick-Bold.a6ba9a74c17ec0faa7a51ccddb9.40335ed6952d868afeb4484433688eda.woff2");
     }
     @font-face {
       font-family: "Montserrat";
       src: url("https://font-public.canva.com/YACgEQNAr7w/0/subsets/Montserrat-Regular.b71045c67b2ce3d1ee672.461c72b2f900c3dc8a7e2a45222f1e6.woff2");
     }
-  
     body {
-      margin: 0;
-      
+      margin: 0; 
     }
     .tp-hero {
       width: 100%;
@@ -30,9 +28,8 @@
       font-family: "Rustic";
       display: flex;
       justify-content: center;
-      color: black;
-      background-image: url(template19.jpg) ;
-      background-size: cover;
+      color: white;
+      background-color: black;
     }
     .container {
       width: 100%;
@@ -40,6 +37,7 @@
       display: flex;
       position: relative;
       justify-content: center;
+      flex-direction: column;
     }
     .img {
       width: 100%;
@@ -47,9 +45,47 @@
     }
    .tp-hero-logo {
     width: 240px;
-    margin-top: 57px;
-    margin-left: 45px;
+    margin: 45px auto
    }
+   .tp-hero-img{
+    width: 67%;
+    margin-inline: auto;
+   }
+   .tp-hero-deco{
+    width: 160px;
+    position: absolute;
+    z-index: 1;
+   }
+   .tp-hero-deco1 {
+    top: 280px;
+    left: -65px;
+    transform: rotate(-180deg);
+   }
+   .tp-hero-deco2 {
+    bottom: 280px;
+    right: -65px;
+   }
+   .tp-hero-title{
+    font-size: 131px;
+    line-height: 1.1em;
+    text-align: center;
+    font-family: "Gatwick";
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+   }
+   .tp-hero-sub {
+    font-size: 22px;
+    font-family: "Montserrat";
+    color: white;
+    text-align: center;
+    max-width: 645px;
+    margin-inline: auto;
+    font-weight: 400;
+   }
+   .tp-hero-title-wrap {
+    margin-top: -71px;
+  }
 </style>
 <body>
     <section class="tp-hero">
@@ -58,7 +94,17 @@
             <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
           </div>
           <div class="tp-hero-img">
-            <img src="template-img14.jpg" alt="" class="img">
+            <img src="template14-bg.jpg" alt="" class="img">
+          </div>
+          <div class="tp-hero-deco tp-hero-deco1">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2053_template20-c.png" alt="" class="img">
+          </div>
+          <div class="tp-hero-deco tp-hero-deco2">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2053_template20-c.png" alt="" class="img">
+          </div>
+          <div class="tp-hero-title-wrap">
+            <div class="tp-hero-title">whiskey</div>
+            <div class="tp-hero-sub">Some moments can't be spoken — but they linger in the warmth of a fine glass of whiskey.</div>
           </div>
         </div>
     </section>
