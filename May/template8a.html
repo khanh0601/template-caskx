@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueRegular.359411b6a92a66bec574392.700a15b7729455e0e999b3ed4727605.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Perandory";
+      src: url("https://font-public.canva.com/YAFJstPFAd8/0/Perandory-Regular.671ca07ed311614ddbc9d5.3167e2caf03ff4b92cff585c31db3e0f.woff2");
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-color: rgb(228, 226, 221);
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-size: 100%;
+      padding-inline: 70px;
+    }
+
+    .img-full {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .img {
+      width: 100%;
+    }
+    .tp-hero-head {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 30px;
+      align-items: end;
+      border-bottom: 1px solid black;
+      padding-bottom: 10px;
+      margin-bottom: 40px;
+    }
+    .tp-hero-logo {
+        width: 200px;
+
+    }
+    .tp-hero-label {
+      font-size: 32px;
+      font-weight: 700;
+
+    }
+    .tp-hero-head-title {
+        font-size: 32px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1;
+    }
+   .tp-hero-title {
+    font-size: 124px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: .9em;
+    margin-bottom: 40px;
+   }
+   .tp-hero-img {
+    height: 600px;
+   }
+   .tp-hero-bot-left-color {
+    display: flex;
+    width: 160px;
+    height: 16px;
+   }
+   .tp-hero-bot-left-color .item {
+    flex: 1;
+    height: 100%;
+   }
+   .item1 {
+    background-color: rgb(255, 175, 106);
+   }
+   .item2 {
+    background-color: rgb(94, 36, 4);
+   }
+   .item3 {
+    background-color: rgb(255, 178, 15);
+   }
+   .item4 {
+    background-color: rgb(237, 95, 30);
+   }
+   .item5 {
+    background-color: rgb(0, 0, 0);
+   }
+   .tp-hero-bot {
+    margin-top: 46px;
+    display: flex;
+    gap: 60px;
+   }
+   .tp-hero-bot-left-title {
+    font-size: 90px;
+    font-family: "Perandory";
+   }
+   .tp-hero-bot-left-label {
+    font-size: 16px;
+   }
+   .tp-hero-bot-right-txt{
+    font-size: 40px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+   }
+   .tp-hero-bot-right{
+    border-bottom: 1px solid #000;
+    align-self: flex-end;
+   }
+   .tp-hero-img{
+    margin-inline: -70px;
+   }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-head">
+          <div class="tp-hero-label">New product</div>
+          <div class="tp-hero-logo">
+            <img
+              src="https://s3.amazonaws.com/caskx-base/1/library/2121_logo-caskx.webp"
+              class="img"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="tp-hero-title">Whiskey That Burns Bright, Tastes Bold</div>
+        <div class="tp-hero-img">
+          <img src="template8a.jpg" class="img-full" alt="">
+        </div>
+        <div class="tp-hero-bot">
+          <div class="tp-hero-bot-left">
+            <div class="tp-hero-bot-left-label">Macallan</div>
+            <div class="tp-hero-bot-left-title">1880</div>
+            <div class="tp-hero-bot-left-color">
+              <div class="item1 item"></div>
+              <div class="item2 item"></div>
+              <div class="item3 item"></div>
+              <div class="item4 item"></div>
+              <div class="item5 item"></div>
+            </div>
+          </div>
+          <div class="tp-hero-bot-right">
+            <div class="tp-hero-bot-right-txt">Matured in oak barrels for rich, complex flavors. Whiskey the spirit of time, rich in character, smooth in every moment</div>
+          </div>
+          </div>
+      </div>
+    </section>
+  </body>
+</html>
