@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "Bobby_Jones";
+      src: url("https://font-public.canva.com/YAEDY77AUF4/0/Bobby_Jones.0a08c028c7f4094d934c54fa4def.17abc1e1c227f8b226c01526988310a9.woff2");
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bobby_Jones";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-image: url('./template26.jpg');
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+    }
+   .img {
+    width: 100%;
+    object-fit: cover;
+   }
+   .tp-hero-logo {
+    width: 140px;
+    margin-block: 30px 25px;
+    margin-inline: auto;
+   }
+   .tp-hero-title {
+       font-size: 105px;
+       color: rgb(250, 245, 240);
+       line-height: 1em;
+       margin-bottom: 20px;
+       font-weight: 700;
+       letter-spacing: 0.044em;
+       margin-inline: auto;
+       text-align: center;
+   }
+   .tp-hero-sub {
+       font-size: 32px;
+       line-height: 1.3em;
+       margin-bottom: 20px;
+       height: 71px;
+       padding-inline: 40px;
+       border-radius: 100px;
+       color: rgb(39, 71, 58);
+       background-color: rgb(255, 222, 89);
+       margin-inline: auto;
+       display: flex;
+       align-items: center;
+       text-align: center;
+       margin-top: 10px;
+   }
+   .tp-hero-discount {
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       width: 384px;
+       height: 384px;
+       border-radius: 100%;
+       background-color: rgb(39, 71, 58);
+       font-family: "Bebas";
+       position: absolute;
+       left: 100px;
+       bottom: 100px;
+       transform: rotate(6deg);
+       flex-direction: column;
+       z-index: 2;
+   }
+   .tp-hero-discount-label{
+    font-size: 48px;
+    font-weight: 700;
+    color: rgb(250, 245, 240);
+    line-height: 1.1em;
+   }
+   .tp-hero-discount-label:last-child {
+    margin-top: -20px;
+   }
+   .tp-hero-discount-number{
+    font-size: 162px;
+    font-weight: 700;
+    color: rgb(250, 245, 240);
+    line-height: 1em;
+   }
+   .tp-hero-deco {
+    width: 846px;
+    height: 158%;
+    position: absolute;
+    transform: rotate(-25deg);
+    left: -500px;
+    top: 0;
+    background-color: rgb(255, 222, 89);
+    z-index: 0;
+   }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-logo">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+            </div>
+           <div class="tp-hero-title">Whiskey Bliss</div>
+           <div class="tp-hero-sub">Smooth, Rich, Refined Whiskey</div>
+           <div class="tp-hero-discount">
+            <div class="tp-hero-discount-label">Up to</div>
+            <div class="tp-hero-discount-number">60%</div>
+            <div class="tp-hero-discount-label">OFF</div>
+        </div>
+        <div class="tp-hero-deco"></div>
+        </div>
+    </section>
+
+</body>
+</html>

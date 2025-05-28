@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+        font-family: 'open sauce one';
+        src: url('https://font-public.canva.com/YAFdJs2qTWQ/0/OpenSauceOne-Regular.036bb82edc07f1cfb21.88a36cab6d7cfa75bff7e49535b9642a.woff2');
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-color: rgb(250, 239, 224);
+      color: rgb(0, 0, 0);
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 251, 242);
+      background-image: url('https://s3.amazonaws.com/caskx-base/1/library/2123_template2-bg (1).webp');
+      background-size: 100%;
+    }
+
+    .img-full{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .img {
+        width: 100%;
+    }
+    .tp-hero-logo {
+        width: 200px;
+        position: absolute;
+        top: 40px;
+        right: 40px ;
+    }
+    .tp-hero-img {
+        height: 600px;
+        width: 100%;
+        overflow: hidden;
+        flex: none;
+    }
+    .tp-hero-sub-wrap {
+        font-size: 26px;
+        font-weight: 700;
+        height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(255, 195, 0);
+        border: 3px solid rgb(0, 0, 0);
+        flex: none;
+    }
+    .tp-hero-sub {
+        max-width: 900px;
+    }
+    .tp-hero-content {
+        display: flex;
+        flex: 1;
+    }
+    .tp-hero-content1 {
+        font-size: 60px;
+        font-weight: 700;
+        padding: 0 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 55%;
+        border-right: 3px solid rgb(0, 0, 0);
+        flex: none;
+    }
+    .tp-hero-content1 div {
+        max-width: 400px;
+    }
+    .tp-hero-content2 {
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 339px;
+        flex: 1;
+        margin: auto;
+        font-family: 'open sauce one';
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/1975_logo_cask.webp" alt="" class="img"/></div>
+        <div class="tp-hero-img">
+          <img src="template3.jpg" alt="" class="img-full" />
+        </div>
+        <div class="tp-hero-sub-wrap"><div class="tp-hero-sub">bold flavor, chill vibe. bold flavor, chill vibe. bold flavor, chill vibe. bold flavor, chill vibe</div></div>
+        <div class="tp-hero-content">
+            <div class="tp-hero-content tp-hero-content1"><div>Crafted for the Connoisseur</div></div>
+            <div class="tp-hero-content tp-hero-content2"><div>A hint of smoke, a touch of wood, a sip of memory. Whiskey is more than a drink — it’s a feeling aged in time.</div></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

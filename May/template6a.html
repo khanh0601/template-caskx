@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueRegular.359411b6a92a66bec574392.700a15b7729455e0e999b3ed4727605.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      background-image: url('./template6a.jpg');
+      background-size: cover;
+      color: rgb(255, 222, 89);
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      background-size: 100%;
+    }
+
+    .img-full{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .img {
+        width: 100%;
+    }
+    .tp-hero-logo {
+        width: 200px;
+        position: absolute;
+        bottom: 24px;
+        left: 24px;
+    }
+    .tp-hero-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      margin-top: 100px;
+      padding-inline: 120px;
+      margin-bottom: 47px;
+    }
+    .tp-hero-head-title {
+        width: max-content;
+        font-size: 28px;
+        text-transform: uppercase;
+        flex: none;
+        margin-right: 10px;
+        max-width: 336px;
+        line-height: 1.4;
+    }
+  .tp-hero-buy {
+    width: 240px;
+    padding-top: 10px;
+    height: 90px;
+    border: 2px solid rgb(255, 222, 89);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  .tp-hero-label {
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 70px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 0.043em;
+  }
+  .tp-hero-title {
+    font-size: 140px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+          <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/1975_logo_cask.webp" alt="" class="img"/></div>
+         <div class="tp-hero-head">
+            <div class="tp-hero-head-title">Elegant and refined, whiskey delivers an exceptional experience in every sip.</div>
+            <div class="tp-hero-buy">Buy now</div>
+         </div>
+         <div class="tp-hero-label">new Product</div>
+         <div class="tp-hero-title">Whiskey Bliss</div>
+      </div>
+    </section>
+  </body>
+</html>

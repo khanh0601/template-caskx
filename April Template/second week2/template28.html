@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("https://font-public.canva.com/YAFdJvSyp_k/0/Inter-Regular.b1129fff306538fc9a12146948.34c7dd29b48020ab4837bbcd3d77bfc2.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Inter";
+      src: url("https://font-public.canva.com/YAFdJvSyp_k/0/Inter-Bold.5b5ef58cf9905273ea3fc901dfa93.b25a21661ecd0da6d131b6ee3061b904.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "Playfair";
+      src: url("https://font-public.canva.com/YAFdJhem5V8/0/subsets/PlayfairDisplay-Bold8741462016209947052..b8d61597dbea405b8a15ed6ced66883.woff2");
+    }
+    @font-face {
+      font-family: "Sloop Script";
+      src: url("https://font-public.canva.com/YAEz2L9phwY/0/subsets/SloopScriptPro-Regular.977d1e2936b54e31c.7a5ed98394a9d7badad1c99cad31622.woff2");
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Inter";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-image: url('./template28.jpg');
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+   .img {
+    width: 100%;
+    object-fit: cover;
+   }
+   .tp-hero-logo {
+    width: 200px;
+   }
+  .tp-hero-top {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 76px;
+    margin-top: 60px;
+   }
+   .tp-hero-label {
+       font-size: 26px;
+       color: rgb(255, 247, 40);
+       max-width: 540px;
+       text-transform: uppercase;
+       text-align: end;
+   }
+   .tp-hero-btn {
+       font-size: 28px;
+       font-weight: 700;
+       color: rgb(255, 247, 40);
+       position: relative;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       width: 300px;
+       text-transform: uppercase;
+       height: 130px;
+   }
+   .tp-hero-btn svg {
+       position: absolute;
+       transform: rotate(6deg);
+       inset: 0;
+   }
+   .tp-hero-content {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   }
+   .tp-hero-heading1 {
+    font-size: 210px;
+    font-family: "Sloop Script";
+    font-weight: 400;
+    color: rgb(251, 194, 18);
+
+    line-height: 1em;
+   }
+  .tp-hero-heading2 {
+    font-size: 130px;
+    font-family: "Playfair";
+    font-weight: 400;
+    color: white;
+    margin-top: -110px;
+    letter-spacing: -0.059em;
+    margin-bottom: 20px;
+  }
+  .tp-hero-desc {
+      font-size: 26px;
+      color: rgb(255, 247, 40);
+      text-transform: uppercase;
+      max-width: 780px;
+      text-align: center;
+      margin-inline: auto;
+      margin-bottom: 30px;
+  }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-top">
+                <div class="tp-hero-logo">
+                    <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+                </div>
+                <div class="tp-hero-label"><span>Whiskey Dreams offers a smooth, rich experience, blending tradition and elegance in every sip.</span></div>
+            </div>
+           <div class="tp-hero-content">
+            <div class="tp-hero-heading1">Invest in</div>
+            <div class="tp-hero-heading2">Whiskey Dreams</div>
+            <div class="tp-hero-desc">Rare Whisky, Rare Investment Returns Guaranteed Sip Slowly, Watch Your Wealth Grow</div>
+            <div class="tp-hero-btn"><span>Buy now</span>
+                <svg class="qY_pAA" viewBox="0 0 146.1960784313725 64" style="overflow: hidden; width: 302.028px; height: 132.218px;"><defs><clipPath id="__id2"><path d="M73.09803921568626,0C32.727106914329454,0 0,14.32688800541461 0,32C0,49.67311199458538 32.72710691432943,64 73.09803921568624,64C113.46897151704306,64 146.19607843137248,49.6731119945854 146.1960784313725,32C146.1960784313725,14.32688800541462 113.46897151704309,0 73.09803921568627,0Z"></path></clipPath></defs><path d="M73.09803921568626,0C32.727106914329454,0 0,14.32688800541461 0,32C0,49.67311199458538 32.72710691432943,64 73.09803921568624,64C113.46897151704306,64 146.19607843137248,49.6731119945854 146.1960784313725,32C146.1960784313725,14.32688800541462 113.46897151704309,0 73.09803921568627,0Z" stroke="#fff728" stroke-width="2" stroke-linecap="butt" clip-path="url(#__id2)" fill="none" vector-effect="non-scaling-stroke"></path></svg>
+            </div>
+           </div>
+        </div>
+        </div>
+    </section>
+</body>
+</html>

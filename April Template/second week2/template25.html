@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Bebas";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0; 
+    }
+    .tp-hero {
+      width: 100%;
+      aspect-ratio: 1/1;
+      font-family: "Bebas";
+      display: flex;
+      justify-content: center;
+      color: white;
+      background-image: url('./template25.jpg');
+      background-size: cover;
+    }
+    .container {
+      width: 100%;
+      overflow: hidden;
+      display: flex;
+      position: relative;
+      flex-direction: column;
+      background-color: rgba(23, 27, 20, 0.737);
+    }
+   .img {
+    width: 100%;
+    object-fit: cover;
+   }
+   .tp-hero-logo {
+    width: 200px;
+    margin-block: 108px 30px;
+    margin-inline: auto;
+   }
+   .tp-hero-title {
+       font-size: 93px;
+       color: rgb(250, 195, 15);
+       line-height: 1em;
+       margin-bottom: 20px;
+       font-weight: 700;
+       max-width: 750px;
+       margin-inline: auto;
+       text-align: center;
+   }
+   .tp-hero-sub {
+       font-size: 32px;
+       line-height: 1.3em;
+       margin-bottom: 20px;
+       max-width: 800px;
+       margin-inline: auto;
+       text-align: center;
+   }
+</style>
+<body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-logo">
+                <img src="https://s3.amazonaws.com/caskx-base/1/library/2039_logo.webp" alt="" class="img">
+            </div>
+           <div class="tp-hero-title">The Essence of Time in Every WHISKEY CASK</div>
+           <div class="tp-hero-sub">Whiskey embodies the essence of time, with each sip revealing rich, complex flavors developed through years of craftsmanship.</div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;    
+      color: rgb(48, 25, 7);
+      display: flex;
+      justify-content: center;
+      font-weight: 700;
+      text-align: center;
+    }
+    .container {
+      width: 100%;
+      padding-inline: 155px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(255, 251, 242);
+      position: relative;
+    }
+    .tp-hero-title {
+        font-size: 260px;
+        line-height: .9em;
+        letter-spacing: -0.023em;
+        text-transform: uppercase;
+        margin-block: 70px 10px;
+    }
+    .img{
+        width: 100%;
+    }
+    .tp-hero-img-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        gap: 1.2rem;
+        
+    }
+    .tp-hero-img {
+        flex: 1;
+        aspect-ratio: 714/265;
+        border-radius: 32px;
+        overflow: hidden;
+    }
+    .tp-hero-sub {
+        font-size: 44px;
+        margin-block: 50px 30px;
+        line-height: 1.1em;
+    }
+    .tp-hero-btn-wrap {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    .tp-hero-btn {
+        height: 64px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: 60px;
+        font-size: 36px;
+        line-height: .8em;
+        border-radius: 100px;
+        text-transform: uppercase;
+        padding-top: .2em;
+    }
+    .btn-outline {
+        width: max-content;
+        flex: none;
+        border: 2px solid rgb(48, 25, 7);
+    }
+    .btn-bg {
+        background-color: rgb(48, 25, 7);
+        color: white;
+        flex: 1;
+    }
+.tp-hero-logo {
+        width: 200px;
+        position: absolute;
+        top: 4rem;
+        right: 4rem;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+         <div class="tp-hero-logo">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2121_logo-caskx.webp" alt="" class="img">
+         </div>
+        <div class="tp-hero-title">{{{title}}}</div>
+        <div class="tp-hero-img-wrap">
+            <div class="tp-hero-img">
+                <img src="{{img}}" alt="" class="img">
+            </div>
+        </div>
+        <div class="tp-hero-sub">{{{sub}}}</div>
+        <div class="tp-hero-btn-wrap">
+            <div class="tp-hero-btn btn-outline"><span>{{{btn1}}}</span></div>
+            <div class="tp-hero-btn btn-bg"><span>{{{btn2}}}</span></div>
+            <div class="tp-hero-btn btn-outline"><span>{{{btn3}}}</span></div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
