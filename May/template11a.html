@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueRegular.359411b6a92a66bec574392.700a15b7729455e0e999b3ed4727605.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "SloopScriptPro";
+      src: url("https://cdnwf.bear.plus/fonts/SloopScriptPro-Regular.woff2");
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      position: relative;
+    }
+    .img {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        z-index: 10;
+    }
+    .tp-hero-inner {
+        background-color: rgb(41, 35, 35);
+        height: max-content;
+        color: white;
+        width: 100%;
+        padding-top: 60px;
+        flex: none;
+    }
+    .tp-hero-head {
+        padding-inline: 100px;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+    }
+    .tp-hero-logo{
+        width: 140px;
+        margin-top: 20px;
+    }
+    .tp-hero-label{
+        font-size: 32px;
+    }
+    .tp-hero-title {
+        font-size: 160px;
+        color: rgb(255, 195, 0);
+        text-align: center;
+        font-weight: 700;
+    }
+    .tp-hero-body{
+        border-top: 2px solid #fff ;
+        display: flex;
+        opacity: .9;
+    }
+    .tp-hero-desc {
+        width: 60%;
+        border-right: 2px solid #fff ;
+        padding: 80px 180px 80px 100px;
+        font-size: 30px;
+        line-height: 1.2em;
+    }
+    .tp-hero-discount {
+        width: 40%;
+    }
+    .img-fill {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+    .tp-hero-img {
+        flex: 1;
+        width: 100%;
+        overflow: hidden;
+    }
+    .tp-hero-discount {
+        font-size: 60px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tp-hero-discount div {
+        width: 300px;
+        border: 1px solid white;
+        border-radius: 100%;
+        height: 180px;
+        padding-top: 40px;
+        padding-inline: 20px;
+        display: flex;
+        align-items: center;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="tp-hero-inner">
+                <div class="tp-hero-head">
+                    <div class="tp-hero-label">Break rules</div>
+                    <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/1975_logo_cask.webp" alt="" class="img"></div>
+                    <div class="tp-hero-label">Break rules</div>
+                </div>
+                <div class="tp-hero-title">Whiskey Dreams</div>
+                <div class="tp-hero-body">
+                    <div class="tp-hero-desc">
+                        <div>
+                            Whiskey is more than a drink it’s a craft, a tradition, and an experience. Carefully distilled and patiently aged in oak barrels, every drop carries notes of warm spice, smooth vanilla, toasted wood, and the character of time.
+                        </div>
+                    </div>
+                    <div class="tp-hero-discount">
+                        <div>
+                            Enjoy 15% off
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tp-hero-img">
+                <img src="./template11a.jpg" alt="" class="img-fill">
+            </div>
+        </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueRegular.359411b6a92a66bec574392.700a15b7729455e0e999b3ed4727605.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Extenda";
+      src: url("https://font-public.canva.com/YAEp7NXqa0Y/0/subsets/Extenda-20-Micro.975fb96fc21e409c0cd32ae.3d7308b4e60d5bec1047d42dc71c3fb.woff2");
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+    }
+    .tp-hero {
+      padding-top: 90px;
+      color: rgb(200, 54, 0);
+      min-height: 100%;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      position: relative;
+      background-image: url(https://s3.amazonaws.com/caskx-base/1/library/2353_template12-bg.jpg);
+      background-size: cover;
+    }
+    .img {
+        width: 100%;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 10;
+    }
+    .tp-hero-img {
+      position: absolute;
+      width: 500px;
+      bottom: 140px;
+      right: 34px;
+    }
+    .line {
+      width: 100%;
+      background-color: rgb(200, 54, 0);
+      position: absolute;
+      left: 0;
+    }
+    .line.top {
+      top: -90px;
+      height: 20px;
+    }
+    .line.bottom {
+      bottom: 0;
+      height: 60px;
+    }
+    .tp-hero-label {
+      font-size: 48px;
+      font-weight: 700;
+      text-align: center;
+    }
+    .tp-hero-title {
+      font-size: 730px;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: "Extenda";
+      letter-spacing: 0.057em;
+      margin-left: .057em;
+      margin-top: -20px;
+      line-height: 1;
+    }
+    .tp-hero-sub {
+      font-size: 28px;
+      line-height: 1.2;
+      margin-left: 87px;
+      max-width: 300px;
+      margin-top: -130px;
+    }
+    .tp-hero-promotion-wrap {
+      margin-left: 87px;
+      width: 210px;
+      height: 150px;
+      border-radius: 50%;
+      border: 1px solid rgb(200, 54, 0);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 20px;
+      margin-top: 80px;
+    }
+    .tp-hero-promotion-label {
+      font-size: 28px;
+
+    }
+    .tp-hero-promotion-title {
+      font-size: 70px;
+      font-weight: 700;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+        <div class="container">
+            <div class="line top"></div>
+            <div class="tp-hero-label">One sip, a century of legacy.</div>
+            <div class="tp-hero-title">Whiskey</div>
+            <div class="tp-hero-sub">This isn't just whiskey. It's a story bottled in oak.</div>
+            <div class="tp-hero-promotion-wrap">
+              <div class="tp-hero-promotion-label">GET promo</div>
+              <div class="tp-hero-promotion-title">10%</div>
+            </div>
+            <div class="tp-hero-img">
+              <img src="./template12a.png" alt="" class="img">
+            </div>
+            <div class="line bottom"></div>
+        </div>
+    </section>
+  </body>
+</html>
