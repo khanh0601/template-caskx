@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "Extenda";
+      src: url("https://font-public.canva.com/YAEp7GnaNZ4/0/subsets/Extenda-40-Hecto.e53cebf414e22a353d3a5d6.3ac1afb3cff78842ef66b607c5e64f0.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+      font-weight: 700;
+      color: white;
+    }
+    .tp-hero {
+      background-image: url("./template2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      display: flex;
+      aspect-ratio: 1;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .img {
+      width: 100%;
+    }
+    .tp-hero-logo {
+      width: 160px;
+      margin-inline: auto 62px;
+      margin-top: 61px;
+    }
+    .tp-hero-content {
+      max-width: 495px;
+      margin-inline: auto 90px;
+      margin-block: auto;
+    }
+    .tp-hero-label {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    .tp-hero-title {
+      font-size: 72px;
+      text-transform: uppercase;
+      line-height: .9;
+    }
+    .tp-hero-img {
+      margin-top: -40px;
+      width: 85%;
+      margin-inline: auto;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-head">
+          <div class="tp-hero-logo">
+            <img
+              src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp"
+              alt=""
+              class="img"
+            />
+          </div>
+        </div>
+        <div class="tp-hero-content">
+            <div class="tp-hero-label">bold flavor, chill vibe</div>
+            <div class="tp-hero-title">Whiskey the spirit of time, rich in character, smooth in every moment</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+      font-weight: 400;
+    }
+    .tp-hero {
+        background-color: rgb(255, 239, 219);
+        display: flex;
+        aspect-ratio: 1;
+        padding: 40px;
+    }
+    .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .tp-hero-content {
+        flex: 1;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 15px;
+    }
+    .img {
+        width: 100%;
+        height: 100%;
+    }
+    .tp-hero-logo {
+        width: 160px;
+    }
+    .tp-hero-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        flex: none;
+        &.tp-hero-head-item {
+            flex: 1;
+            aspect-ratio: 1;
+        }
+    }
+    .tp-hero-desc {
+        font-size: 28px;
+        color: black;
+        text-transform: uppercase;
+        letter-spacing: 0.263em;
+    }
+    .tp-hero-title {
+        font-size: 120px;
+        text-align: center;
+        text-transform: uppercase;
+
+    }
+    
+  </style>
+  
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+       <div class="tp-hero-head">
+           <div class="tp-hero-head-item"><img src="./template3-1.jpg" class="img" alt=""></div>
+           <div class="tp-hero-head-item"><img src="./template3-2.jpg" class="img" alt=""></div>
+           <div class="tp-hero-head-item"><img src="./template3-3.jpg" class="img" alt=""></div>
+        </div>
+        <div class="tp-hero-content">
+           <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/2431_logo.webp" alt="" class="img"></div>
+           <div class="tp-hero-title">Legendary Whiskey</div>
+           <div class="tp-hero-desc">Crafted Heritage, Timeless Taste</div>
+       </div>
+       <div class="tp-hero-head">
+        <div class="tp-hero-head-item"><img src="./template3-4.jpg" class="img" alt=""></div>
+        <div class="tp-hero-head-item"><img src="./template3-5.jpg" class="img" alt=""></div>
+        <div class="tp-hero-head-item"><img src="./template3-6.jpg" class="img" alt=""></div>
+     </div>
+      </div>
+    </section>
+  </body>
+</html>

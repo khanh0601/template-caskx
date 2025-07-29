@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "Extenda";
+      src: url("https://font-public.canva.com/YAEp7GnaNZ4/0/subsets/Extenda-40-Hecto.e53cebf414e22a353d3a5d6.3ac1afb3cff78842ef66b607c5e64f0.woff2");
+      font-weight: 700;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+      font-weight: 700;
+    }
+    .tp-hero {
+        background-image: url('./template1-bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        aspect-ratio: 1;
+    }
+    .container {
+        width: 100%;
+    }
+    .img {
+        width: 100%;
+    }
+    .tp-hero-logo {
+        width: 160px;
+    }
+    .tp-hero-head {
+        display: flex;
+        justify-content: space-between;
+        padding-inline: 30px 40px;
+        align-items: end;
+        margin-top: 60px;
+    }
+    .tp-hero-label {
+        font-size: 28px;
+        color: black;
+    }
+    .tp-hero-title {
+        font-family: "Extenda";
+        font-size: 240px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .tp-hero-img {
+        margin-top: -40px;
+        width: 85%;
+        margin-inline: auto;
+    }
+  </style>
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+       <div class="tp-hero-head">
+        <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/2431_logo.webp" alt="" class="img"></div>
+        <div class="tp-hero-label">Matured by time. Mellowed by soul</div>
+       </div>
+       <div class="tp-hero-title">Invest in whiskey</div>
+       <div class="tp-hero-img">
+        <img src="./template1.png" class="img" alt="">
+       </div>
+      </div>
+    </section>
+  </body>
+</html>

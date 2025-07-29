@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+      font-weight: 700;
+    }
+    @font-face {
+      font-family: "BebasNeue";
+      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+      font-weight: 400;
+    }
+    @font-face {
+      font-family: "Norms";
+      src: url("https://font-public.canva.com/YAFdJoYMYSc/0/TT_Norms_Pro_Regular.b9f003a8b2d733a55ba.fcc7b8c7fad442649ca552dce8f94418.woff2");
+      font-weight: 400;
+    }
+    body {
+      margin: 0;
+      font-family: "BebasNeue";
+      font-weight: 400;
+    }
+    .tp-hero {
+      background-color: black;
+      display: flex;
+      aspect-ratio: 1;
+    }
+    .container {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+    }
+    .tp-hero-content {
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      row-gap: 15px;
+    }
+    .img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .tp-hero-logo {
+      width: 160px;
+      position: absolute;
+      top: 46px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .tp-hero-img {
+      height: 500px;
+      width: 100%;
+    }
+    .tp-hero-title-wrap {
+      background-color: rgb(255, 195, 0);
+      padding: 60px 60px 34px 60px;
+      margin-inline: 60px;
+      margin-top: -60px;
+      margin-bottom: 40px;
+    }
+    .tp-hero-title {
+      font-size: 100px;
+      line-height: 1em;
+      font-weight: 700;
+      text-align: center;
+    }
+    .tp-hero-sub {
+      font-family: "Norms";
+      font-size: 30px;
+      margin-inline: 60px;
+      color: white;
+      margin-bottom: 100px;
+    }
+    .tp-hero-btn {
+        display: flex;
+        column-gap: 20px;
+        padding-left: 100px;
+        padding-block: 25px;
+        background-color: white;
+        align-items: center;
+        margin-inline: 60px;
+        width: calc(100% - 120px);
+    }
+    .tp-hero-btn-ic {
+        width: 180px;
+        flex: none;
+    }
+    .tp-hero-btn-txt {
+        font-size: 30px;
+        font-weight: 700;
+    }
+  </style>
+
+  <body>
+    <section class="tp-hero">
+      <div class="container">
+        <div class="tp-hero-logo">
+          <img
+            src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp"
+            class="img"
+            alt=""
+          />
+        </div>
+        <div class="tp-hero-img">
+          <img src="./template5.webp" class="img" alt="" />
+        </div>
+        <div class="tp-hero-title-wrap">
+          <div class="tp-hero-title">Whiskey the silence between words.</div>
+        </div>
+        <div class="tp-hero-sub">
+          Whiskey isn’t just a drink — it’s a legacy forged through time, care,
+          and fearless artistry. Aged in charred oak, its deep amber color
+          whispers stories of smoke, grain, and waiting. Every pour is a tribute
+          to tradition, a bold echo of the fire and patience that shaped it.
+        </div>
+        <div class="tp-hero-btn">
+            <div class="tp-hero-btn-ic"><img src="https://s3.amazonaws.com/caskx-base/1/library/2444_arrown.png" class="img" alt=""></div>
+            <div class="tp-hero-btn-txt">Born in barrels. Raised for rebels.</div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
