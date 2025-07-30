@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://font-public.canva.com/YACgESME5ew/0/BebasNeueBold.38c4cd9428b20239174c609313.6551951cbed483e8cc4ad77cece6786c.woff2");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://font-public.canva.com/YACgESME5ew/0/BebasNeueRegular.359411b6a92a66bec574392.9ba82e67af11d8736418bb9db4d51714.woff2");
+    font-weight: 400;
+  }
+
+
+  body {
+    margin: 0;
+    font: 1em sans-serif;
+    ont-family: "BebasNeue";
+    font-weight: 400;
+  }
+
+  .img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tp-hero {
+    background-image: url("./template14");
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .img {
+    width: 100%;
+  }
+
+  .tp-hero-imgs {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 70px;
+    margin-inline: auto;
+    .tp-hero-imgs-item {
+      height: 450px;
+      overflow: hidden;
+      width: 270px;
+      border-top-left-radius: 100px;
+      border-bottom-right-radius: 100px;
+    }
+  }
+
+  .tp-hero-logo {
+    width: 140px;
+    margin-bottom: 70px;
+    margin-inline: auto;
+    margin-top: 104px;
+  }
+
+  .tp-hero-title {
+    font-size: 80px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    color: white;
+    text-align: center;
+    max-width: 1000px;
+    margin-inline: auto;
+    text-transform: uppercase;
+  }
+  .tp-hero-sub {
+    font-size: 28px;
+    max-width: 1100px;
+    line-height: 1.4;
+    margin-inline: auto;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+  }
+</style>
+
+<body>
+  <div class="tp-hero">
+    <div class="container">
+      <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp"
+          class="img" alt=""></div>
+      <div class="tp-hero-title">Whiskey the silence between words.</div>
+      <div class="tp-hero-imgs">
+        <div class="tp-hero-imgs-item">
+          <img src="./template14-1.webp" class="img-fill" alt="">
+        </div>
+        <div class="tp-hero-imgs-item">
+          <img src="./template14-1.webp" class="img-fill" alt="">
+        </div>
+        <div class="tp-hero-imgs-item">
+          <img src="./template14-1.webp" class="img-fill" alt="">
+        </div>
+    </div>
+    <div class="tp-hero-sub">For the ones who choose their own way, [Tên Whiskey] delivers a rich flavor with attitude
+      smoky, spicy, and endlessly memorable.</div>
+  </div>
+  </div>
+</body>
+
+</html>

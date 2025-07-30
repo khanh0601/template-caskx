@@ -1,72 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Document</title>
-  </head>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    @font-face {
-      font-family: "BebasNeue";
-      src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
-      font-weight: 700;
-    }
-    @font-face {
-      font-family: "BebasNeue";
-      src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
-      font-weight: 400;
-    }
-    @font-face {
-      font-family: "Norms";
-      src: url("https://font-public.canva.com/YAFdJoYMYSc/0/TT_Norms_Pro_Regular.b9f003a8b2d733a55ba.fcc7b8c7fad442649ca552dce8f94418.woff2");
-      font-weight: 400;
-    }
-    body {
-      margin: 0;
-      font-family: "BebasNeue";
-      font-weight: 400;
-    }
-    .tp-hero {
-      background-image: url(./template6-bg.jpg);
-      background-size: cover;
-      display: flex;
-      aspect-ratio: 1;
-    }
-    .container {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-    .tp-hero-content {
-      flex: 1;
-      align-items: center;
-      justify-content: center;
-      display: flex;
-      flex-direction: column;
-      row-gap: 15px;
-    }
-    .img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    .tp-hero-logo {
-      width: 160px;
-    }
-   .tp-hero-img-wrap {
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: "ZuumeRough";
+    src: url("https://font-public.canva.com/YAFFFQTMaOE/0/subsets/ZuumeRough-Bold.3144f88628b230e1f3a59975.67d5e64c98b68ffa25116e8215da987.woff2");
+    font-weight: 400;
+  }
+
+  body {
+    margin: 0;
+    font-family: "BebasNeue";
+    font-weight: 400;
+  }
+
+  .tp-hero {
+    background-image: url(./template6-bg.jpg);
+    background-size: cover;
+    display: flex;
+    aspect-ratio: 1;
+    overflow: hidden;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .tp-hero-content {
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+  }
+
+  .img {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .tp-hero-logo {
+    width: 180px;
+    margin-bottom: 30px;
+  }
+
+  .tp-hero-img-wrap {
     display: flex;
     width: 100%;
     padding-inline: 40px;
     margin-top: -100px;
-   }
-   .tp-hero-img-item {
+    margin-bottom: 100px;
+  }
+
+  .tp-hero-img-item {
     flex: 1;
     padding: 40px;
     background-image: url(./template6-item-bg.png);
@@ -75,66 +89,108 @@
     margin-left: -30px;
     transform: rotate(-10deg);
     position: relative;
+
     &:first-child {
-        margin-left: 0;
-        top: 200px;
+      margin-left: 0;
+      top: 200px;
     }
+
     &:nth-child(2) {
-        top: 100px;
+      top: 100px;
     }
-}
-.tp-hero-img-item-inner {
+  }
+
+  .tp-hero-img-item-inner {
     aspect-ratio: 1;
     border-radius: 50%;
     overflow: hidden;
     width: 100%;
     height: 100%;
-   }
-   .tp-hero-sub {
+  }
+
+  .tp-hero-sub {
     margin-top: 96px;
     max-width: 460px;
     margin-left: 70px;
     font-size: 26px;
     font-weight: 700;
     line-height: 1.1;
-   }
-   .tp-hero-logo {
-    width: 180px;
-   }
-  </style>
+  }
 
-  <body>
-    <section class="tp-hero">
-      <div class="container">
-            <div class="tp-hero-sub">There's nothing quite like the rich, smooth taste of a perfectly aged whiskey to bring people together. From lively celebrations to quiet evenings</div>
-            <div class="tp-hero-img-wrap">
-                <div class="tp-hero-img-item">
-                    <div class="tp-hero-img-item-inner">
-                        <img src="./template6-1.jpg" alt="" class="img">
-                    </div>
-                    <div class="tp-hero-img-item-deco1">
-                        <img src="https://s3.amazonaws.com/caskx-base/1/library/2446_deco.png" class="img" alt="">
-                    </div>
-                </div>
-                <div class="tp-hero-img-item">
-                    <div class="tp-hero-img-item-inner">
-                        <img src="./template6-2.jpg" alt="" class="img">
-                    </div>
-                </div>
-                <div class="tp-hero-img-item">
-                    <div class="tp-hero-img-item-inner">
-                        <img src="./template6-3.jpg" alt="" class="img">
-                    </div>
-                </div>
+  .tp-hero-logo {
+    width: 200px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .tp-hero-img-item-deco1 {
+    position: absolute;
+    bottom: -62px;
+    left: -26px;
+    width: 190px;
+    height: 68px;
+    transform: rotate(209deg);
+    z-index: 1;
+  }
+
+  .tp-hero-img-item-deco2 {
+    position: absolute;
+    bottom: -87px;
+    right: 2px;
+    width: 190px;
+    height: 68px;
+    transform: rotate(156deg);
+    z-index: 1;
+  }
+  .tp-hero-title {
+    font-size: 100px;
+    line-height: 1;
+    color: white;
+     font-family: "ZuumeRough";
+     text-align: center;
+     width: 90%;
+  }
+  .tp-hero-content {
+    margin: auto;
+  }
+</style>
+
+<body>
+  <section class="tp-hero">
+    <div class="container">
+      <div class="tp-hero-sub">There's nothing quite like the rich, smooth taste of a perfectly aged whiskey to bring
+        people together. From lively celebrations to quiet evenings</div>
+      <div class="tp-hero-img-wrap">
+        <div class="tp-hero-img-item">
+          <div class="tp-hero-img-item-inner">
+            <img src="./template6-1.jpg" alt="" class="img">
+          </div>
+          <div class="tp-hero-img-item-deco1">
+            <img src="https://s3.amazonaws.com/caskx-base/1/library/2446_deco.png" class="img" alt="">
+          </div>
+        </div>
+        <div class="tp-hero-img-item">
+          <div class="tp-hero-img-item-inner">
+            <img src="./template6-2.jpg" alt="" class="img">
+          </div>
+        </div>
+        <div class="tp-hero-img-item">
+          <div class="tp-hero-img-item-inner">
+            <img src="./template6-3.jpg" alt="" class="img">
+            <div class="tp-hero-img-item-deco2">
+              <img src="https://s3.amazonaws.com/caskx-base/1/library/2446_deco.png" class="img" alt="">
             </div>
-            <div class="tp-hero-logo">
-                <img
-                    src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp"
-                    class="img"
-                    alt=""
-                />
-            </div>
+          </div>
+        </div>
       </div>
-    </section>
-  </body>
+      <div class="tp-hero-content">
+        <div class="tp-hero-logo">
+        <img src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp" class="img" alt="" />
+      </div>
+      <div class="tp-hero-title">Crafted for Moments That Matter  Discover the Spirit of Whiskey</div>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

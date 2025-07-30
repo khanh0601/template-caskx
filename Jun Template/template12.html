@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "OpenSauceOne";
+    src: url("https://font-public.canva.com/YAFdJs2qTWQ/0/OpenSauceOne-Bold.d6dc9a445582372bfb5063.c19f8e9cab364abc00a750036f731e21.woff2");
+    font-weight: 700;
+  }
+    @font-face {
+    font-family: "OpenSans";
+    src: url("https://font-public.canva.com/YAFdJt8dAY0/0/OpenSans-RegularItalic.f0f5fc29312b9fdb0.3caeb8725430f400cbc24c4707d72558.woff2");
+    font-weight: 400;
+  }
+
+
+  body {
+    margin: 0;
+     font-family: "OpenSans";
+    font-weight: 400;
+  }
+
+  .img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .tp-hero {
+    background-image: url("./template12.jpg");
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: flex;
+  }
+
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+ .tp-hero-inner{
+  padding: 80px 250px 120px 120px;
+  background: linear-gradient( to left, #F9A01B 0%,#f9a01b6d 30%, #f9a01b00 80%, #f9a01b00 100%);
+  color: white;
+  margin-top: auto;
+  height: max-content;
+ }
+ .tp-hero-title {
+  font-size: 64px;
+  color: white;
+  margin-bottom: 30px;
+      font-family: "OpenSauceOne";
+      max-width: 700px;
+ }
+ .tp-hero-sub {
+  font-size: 24px;
+
+ }
+</style>
+
+<body>
+  <section class="tp-hero">
+    <div class="container">
+     <div class="tp-hero-inner">
+      <div class="tp-hero-title">Aged to perfection, crafted with heritage.</div>
+      <div class="tp-hero-sub">Whiskey is a timeless expression of tradition and craftsmanship. Deep oak aroma, smooth texture, and a finish that lingers made for those who value quiet confidence in every sip.</div>
+     </div>
+    </div>
+  </section>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Document</title>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://font-public.canva.com/YACgESME5ew/0/subsets/BebasNeueBold.38c4cd9428b20239174c609313.d79b04a25b5c3d072a979491db40ce7.woff2");
+    font-weight: 700;
+  }
+
+  @font-face {
+    font-family: "BebasNeue";
+    src: url("https://cdnwf.bear.plus/fonts/BebasNeueRegular.woff2");
+    font-weight: 400;
+  }
+
+
+  body {
+    margin: 0;
+    font-family: "BebasNeue";
+    font-weight: 400;
+  }
+.img-fill {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .tp-hero {
+    background-color: white;
+    aspect-ratio: 1;
+    overflow: hidden;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+  .container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  .tp-hero-left, .tp-hero-right {
+    flex: 1;
+    height: 100%;
+  }
+  .tp-hero-logo {
+    width: 120px;
+    margin-bottom: 40px;
+  }
+  .tp-hero-left-inner {
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    position: relative;
+    background-image: url('https://s3.amazonaws.com/caskx-base/1/library/2457_template11-bg (1).png');
+    background-size: cover;
+    height: 100%;
+    .tp-hero-img {
+      height: 400px;
+      margin-top: auto;
+      overflow: hidden;
+      display: flex;
+      img {
+        object-position: bottom;
+      }
+    }
+    .tp-hero-title {
+      font-size: 80px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      color: white;
+    }
+    .tp-hero-sub {
+      font-size: 32px;
+      color: white;
+      line-height: 1.2;
+    }
+  }
+</style>
+<body>
+  <section class="tp-hero">
+    <div class="container">
+      <div class="tp-hero-left">
+        <div class="tp-hero-left-inner">
+          <div class="tp-hero-logo"><img src="https://s3.amazonaws.com/caskx-base/1/library/2434_logo-white.webp" class="img" alt=""></div>
+          <div class="tp-hero-title">Discover the Legendary Taste  Premium Whiskey Collection</div>
+          <div class="tp-hero-sub">Enjoy 15% OFF on any bottle from our Signature Reserve Collection.</div>
+          <div class="tp-hero-img">
+            <img src="./template10-1.webp" class="img-fill" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="tp-hero-right">
+        <img src="./template10-2.webp" class="img-fill" alt="">
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
